@@ -1,0 +1,2418 @@
+# go_asm_module
+main.BenchmarkAddASM STEXT size=288 args=0x0 locals=0x98 funcid=0x0 align=0x0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/benchmark.go:10)	TEXT	main.BenchmarkAddASM(SB), ABIInternal, $160-0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/benchmark.go:10)	MOVD	16(g), R16
+	0x0004 00004 (/Users/jan/Development/go_asm_module/benchmark.go:10)	PCDATA	$0, $-2
+	0x0004 00004 (/Users/jan/Development/go_asm_module/benchmark.go:10)	SUB	$32, RSP, R17
+	0x0008 00008 (/Users/jan/Development/go_asm_module/benchmark.go:10)	CMP	R16, R17
+	0x000c 00012 (/Users/jan/Development/go_asm_module/benchmark.go:10)	BLS	268
+	0x0010 00016 (/Users/jan/Development/go_asm_module/benchmark.go:10)	PCDATA	$0, $-1
+	0x0010 00016 (/Users/jan/Development/go_asm_module/benchmark.go:10)	MOVD.W	R30, -160(RSP)
+	0x0014 00020 (/Users/jan/Development/go_asm_module/benchmark.go:10)	MOVD	R29, -8(RSP)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:10)	SUB	$8, RSP, R29
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:10)	FUNCDATA	$0, gclocals·Soq6RzO4SX8YA1O9euewoQ==(SB)
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:10)	FUNCDATA	$1, gclocals·ypkKCsjNF5sa+QaQBzdQzQ==(SB)
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:10)	FUNCDATA	$2, main.BenchmarkAddASM.stkobj(SB)
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:11)	PCDATA	$1, $0
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:11)	CALL	time.Now(SB)
+	0x0020 00032 (/Users/jan/Development/go_asm_module/benchmark.go:11)	MOVD	R0, main..autotmp_27-64(SP)
+	0x0024 00036 (/Users/jan/Development/go_asm_module/benchmark.go:11)	MOVD	R1, main..autotmp_28-72(SP)
+	0x0028 00040 (/Users/jan/Development/go_asm_module/benchmark.go:11)	MOVD	R2, main..autotmp_29-56(SP)
+	0x002c 00044 (/Users/jan/Development/go_asm_module/benchmark.go:11)	MOVD	ZR, R3
+	0x0030 00048 (/Users/jan/Development/go_asm_module/benchmark.go:12)	JMP	88
+	0x0034 00052 (/Users/jan/Development/go_asm_module/benchmark.go:13)	MOVD	R3, 8(RSP)
+	0x0038 00056 (/Users/jan/Development/go_asm_module/benchmark.go:13)	ADD	$1, R3, R0
+	0x003c 00060 (/Users/jan/Development/go_asm_module/benchmark.go:13)	MOVD	R0, main..autotmp_30-80(SP)
+	0x0040 00064 (/Users/jan/Development/go_asm_module/benchmark.go:13)	MOVD	R0, 16(RSP)
+	0x0044 00068 (/Users/jan/Development/go_asm_module/benchmark.go:13)	PCDATA	$1, $1
+	0x0044 00068 (/Users/jan/Development/go_asm_module/benchmark.go:13)	CALL	main.add_asm(SB)
+	0x0048 00072 (/Users/jan/Development/go_asm_module/benchmark.go:15)	MOVD	main..autotmp_27-64(SP), R0
+	0x004c 00076 (/Users/jan/Development/go_asm_module/benchmark.go:15)	MOVD	main..autotmp_28-72(SP), R1
+	0x0050 00080 (/Users/jan/Development/go_asm_module/benchmark.go:15)	MOVD	main..autotmp_29-56(SP), R2
+	0x0054 00084 (/Users/jan/Development/go_asm_module/benchmark.go:12)	MOVD	main..autotmp_30-80(SP), R3
+	0x0058 00088 (/Users/jan/Development/go_asm_module/benchmark.go:12)	MOVD	$10000000, R4
+	0x0060 00096 (/Users/jan/Development/go_asm_module/benchmark.go:12)	CMP	R4, R3
+	0x0064 00100 (/Users/jan/Development/go_asm_module/benchmark.go:12)	BLT	52
+	0x0068 00104 (/Users/jan/Development/go_asm_module/benchmark.go:15)	PCDATA	$1, $0
+	0x0068 00104 (/Users/jan/Development/go_asm_module/benchmark.go:15)	CALL	time.Since(SB)
+	0x006c 00108 (/Users/jan/Development/go_asm_module/benchmark.go:15)	MOVD	R0, main.duration-88(SP)
+	0x0070 00112 (/Users/jan/Development/go_asm_module/benchmark.go:16)	STP	(ZR, ZR), main..autotmp_14-48(SP)
+	0x0074 00116 (/Users/jan/Development/go_asm_module/benchmark.go:16)	STP	(ZR, ZR), main..autotmp_14-32(SP)
+	0x0078 00120 (/Users/jan/Development/go_asm_module/benchmark.go:16)	STP	(ZR, ZR), main..autotmp_14-16(SP)
+	0x007c 00124 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	$type:int(SB), R3
+	0x0084 00132 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	R3, main..autotmp_14-48(SP)
+	0x0088 00136 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	$main..stmp_0(SB), R3
+	0x0090 00144 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	R3, main..autotmp_14-40(SP)
+	0x0094 00148 (/Users/jan/Development/go_asm_module/benchmark.go:17)	PCDATA	$1, $2
+	0x0094 00148 (/Users/jan/Development/go_asm_module/benchmark.go:17)	CALL	runtime.convT64(SB)
+	0x0098 00152 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	$type:time.Duration(SB), R3
+	0x00a0 00160 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	R3, main..autotmp_14-32(SP)
+	0x00a4 00164 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	R0, main..autotmp_14-24(SP)
+	0x00a8 00168 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	main.duration-88(SP), R3
+	0x00ac 00172 (/Users/jan/Development/go_asm_module/benchmark.go:17)	SCVTFD	R3, F0
+	0x00b0 00176 (/Users/jan/Development/go_asm_module/benchmark.go:17)	PCDATA	$0, $-3
+	0x00b0 00176 (/Users/jan/Development/go_asm_module/benchmark.go:17)	FMOVD	$f64.416312d000000000(SB), F1
+	0x00b8 00184 (/Users/jan/Development/go_asm_module/benchmark.go:17)	PCDATA	$0, $-1
+	0x00b8 00184 (/Users/jan/Development/go_asm_module/benchmark.go:17)	FDIVD	F1, F0, F0
+	0x00bc 00188 (/Users/jan/Development/go_asm_module/benchmark.go:17)	FMOVD	F0, R0
+	0x00c0 00192 (/Users/jan/Development/go_asm_module/benchmark.go:17)	CALL	runtime.convT64(SB)
+	0x00c4 00196 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	$type:float64(SB), R3
+	0x00cc 00204 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	R3, main..autotmp_14-16(SP)
+	0x00d0 00208 (/Users/jan/Development/go_asm_module/benchmark.go:17)	MOVD	R0, main..autotmp_14-8(SP)
+	0x00d4 00212 (/Users/jan/Development/go_asm_module/benchmark.go:17)	PCDATA	$0, $-4
+	0x00d4 00212 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x00dc 00220 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x00dc 00220 (<unknown line number>)	NOP
+	0x00dc 00220 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x00e4 00228 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."ASM Addition: %d iterations in %v (%.2f ns/op)\n"(SB), R2
+	0x00ec 00236 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$47, R3
+	0x00f0 00240 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_14-48(SP), R4
+	0x00f4 00244 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$3, R5
+	0x00f8 00248 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x00fc 00252 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $0
+	0x00fc 00252 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x0100 00256 (/Users/jan/Development/go_asm_module/benchmark.go:18)	MOVD	-8(RSP), R29
+	0x0104 00260 (/Users/jan/Development/go_asm_module/benchmark.go:18)	MOVD.P	160(RSP), R30
+	0x0108 00264 (/Users/jan/Development/go_asm_module/benchmark.go:18)	RET	(R30)
+	0x010c 00268 (/Users/jan/Development/go_asm_module/benchmark.go:18)	NOP
+	0x010c 00268 (/Users/jan/Development/go_asm_module/benchmark.go:10)	PCDATA	$1, $-1
+	0x010c 00268 (/Users/jan/Development/go_asm_module/benchmark.go:10)	PCDATA	$0, $-2
+	0x010c 00268 (/Users/jan/Development/go_asm_module/benchmark.go:10)	MOVD	R30, R3
+	0x0110 00272 (/Users/jan/Development/go_asm_module/benchmark.go:10)	CALL	runtime.morestack_noctxt(SB)
+	0x0114 00276 (/Users/jan/Development/go_asm_module/benchmark.go:10)	PCDATA	$0, $-1
+	0x0114 00276 (/Users/jan/Development/go_asm_module/benchmark.go:10)	JMP	0
+	0x0000 90 0b 40 f9 f1 83 00 d1 3f 02 10 eb 09 08 00 54  ..@.....?......T
+	0x0010 fe 0f 16 f8 fd 83 1f f8 fd 23 00 d1 00 00 00 94  .........#......
+	0x0020 e0 2f 00 f9 e1 2b 00 f9 e2 33 00 f9 e3 03 1f aa  ./...+...3......
+	0x0030 0a 00 00 14 e3 07 00 f9 60 04 00 91 e0 27 00 f9  ........`....'..
+	0x0040 e0 0b 00 f9 00 00 00 94 e0 2f 40 f9 e1 2b 40 f9  ........./@..+@.
+	0x0050 e2 33 40 f9 e3 27 40 f9 04 d0 92 d2 04 13 a0 f2  .3@..'@.........
+	0x0060 7f 00 04 eb 8b fe ff 54 00 00 00 94 e0 23 00 f9  .......T.....#..
+	0x0070 ff ff 06 a9 ff ff 07 a9 ff ff 08 a9 03 00 00 90  ................
+	0x0080 63 00 00 91 e3 37 00 f9 03 00 00 90 63 00 00 91  c....7......c...
+	0x0090 e3 3b 00 f9 00 00 00 94 03 00 00 90 63 00 00 91  .;..........c...
+	0x00a0 e3 3f 00 f9 e0 43 00 f9 e3 23 40 f9 60 00 62 9e  .?...C...#@.`.b.
+	0x00b0 1b 00 00 90 61 03 40 fd 00 18 61 1e 00 00 66 9e  ....a.@...a...f.
+	0x00c0 00 00 00 94 03 00 00 90 63 00 00 91 e3 47 00 f9  ........c....G..
+	0x00d0 e0 4b 00 f9 1b 00 00 90 61 03 40 f9 00 00 00 90  .K......a.@.....
+	0x00e0 00 00 00 91 02 00 00 90 42 00 00 91 e3 05 80 d2  ........B.......
+	0x00f0 e4 a3 01 91 e5 07 40 b2 e6 03 05 aa 00 00 00 94  ......@.........
+	0x0100 fd 83 5f f8 fe 07 4a f8 c0 03 5f d6 e3 03 1e aa  .._...J..._.....
+	0x0110 00 00 00 94 bb ff ff 17 00 00 00 00 00 00 00 00  ................
+	rel 0+0 t=R_USEIFACE type:int+0
+	rel 0+0 t=R_USEIFACE type:time.Duration+0
+	rel 0+0 t=R_USEIFACE type:float64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 28+4 t=R_CALLARM64 time.Now+0
+	rel 68+4 t=R_CALLARM64 main.add_asm+0
+	rel 104+4 t=R_CALLARM64 time.Since+0
+	rel 124+8 t=R_ADDRARM64 type:int+0
+	rel 136+8 t=R_ADDRARM64 main..stmp_0+0
+	rel 148+4 t=R_CALLARM64 runtime.convT64+0
+	rel 152+8 t=R_ADDRARM64 type:time.Duration+0
+	rel 176+8 t=R_ARM64_PCREL_LDST64 $f64.416312d000000000+0
+	rel 192+4 t=R_CALLARM64 runtime.convT64+0
+	rel 196+8 t=R_ADDRARM64 type:float64+0
+	rel 212+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 220+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 228+8 t=R_ADDRARM64 go:string."ASM Addition: %d iterations in %v (%.2f ns/op)\n"+0
+	rel 252+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 272+4 t=R_CALLARM64 runtime.morestack_noctxt+0
+main.BenchmarkAddGo STEXT size=240 args=0x0 locals=0x78 funcid=0x0 align=0x0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/benchmark.go:20)	TEXT	main.BenchmarkAddGo(SB), ABIInternal, $128-0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/benchmark.go:20)	MOVD	16(g), R16
+	0x0004 00004 (/Users/jan/Development/go_asm_module/benchmark.go:20)	PCDATA	$0, $-2
+	0x0004 00004 (/Users/jan/Development/go_asm_module/benchmark.go:20)	CMP	R16, RSP
+	0x0008 00008 (/Users/jan/Development/go_asm_module/benchmark.go:20)	BLS	220
+	0x000c 00012 (/Users/jan/Development/go_asm_module/benchmark.go:20)	PCDATA	$0, $-1
+	0x000c 00012 (/Users/jan/Development/go_asm_module/benchmark.go:20)	MOVD.W	R30, -128(RSP)
+	0x0010 00016 (/Users/jan/Development/go_asm_module/benchmark.go:20)	MOVD	R29, -8(RSP)
+	0x0014 00020 (/Users/jan/Development/go_asm_module/benchmark.go:20)	SUB	$8, RSP, R29
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:20)	FUNCDATA	$0, gclocals·ISb46fRPFoZ9pIfykFK/kQ==(SB)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:20)	FUNCDATA	$1, gclocals·Kuc7Ru8erybFG+YfMgZ+3g==(SB)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:20)	FUNCDATA	$2, main.BenchmarkAddGo.stkobj(SB)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:21)	PCDATA	$1, $0
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:21)	CALL	time.Now(SB)
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:21)	MOVD	ZR, R3
+	0x0020 00032 (/Users/jan/Development/go_asm_module/benchmark.go:22)	JMP	40
+	0x0024 00036 (/Users/jan/Development/go_asm_module/benchmark.go:22)	ADD	$1, R3, R3
+	0x0028 00040 (/Users/jan/Development/go_asm_module/benchmark.go:22)	MOVD	$10000000, R4
+	0x0030 00048 (/Users/jan/Development/go_asm_module/benchmark.go:22)	CMP	R4, R3
+	0x0034 00052 (/Users/jan/Development/go_asm_module/benchmark.go:22)	BLT	36
+	0x0038 00056 (/Users/jan/Development/go_asm_module/benchmark.go:25)	CALL	time.Since(SB)
+	0x003c 00060 (/Users/jan/Development/go_asm_module/benchmark.go:25)	MOVD	R0, main.duration-56(SP)
+	0x0040 00064 (/Users/jan/Development/go_asm_module/benchmark.go:26)	STP	(ZR, ZR), main..autotmp_14-48(SP)
+	0x0044 00068 (/Users/jan/Development/go_asm_module/benchmark.go:26)	STP	(ZR, ZR), main..autotmp_14-32(SP)
+	0x0048 00072 (/Users/jan/Development/go_asm_module/benchmark.go:26)	STP	(ZR, ZR), main..autotmp_14-16(SP)
+	0x004c 00076 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	$type:int(SB), R3
+	0x0054 00084 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	R3, main..autotmp_14-48(SP)
+	0x0058 00088 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	$main..stmp_1(SB), R3
+	0x0060 00096 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	R3, main..autotmp_14-40(SP)
+	0x0064 00100 (/Users/jan/Development/go_asm_module/benchmark.go:27)	PCDATA	$1, $1
+	0x0064 00100 (/Users/jan/Development/go_asm_module/benchmark.go:27)	CALL	runtime.convT64(SB)
+	0x0068 00104 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	$type:time.Duration(SB), R3
+	0x0070 00112 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	R3, main..autotmp_14-32(SP)
+	0x0074 00116 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	R0, main..autotmp_14-24(SP)
+	0x0078 00120 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	main.duration-56(SP), R3
+	0x007c 00124 (/Users/jan/Development/go_asm_module/benchmark.go:27)	SCVTFD	R3, F0
+	0x0080 00128 (/Users/jan/Development/go_asm_module/benchmark.go:27)	PCDATA	$0, $-3
+	0x0080 00128 (/Users/jan/Development/go_asm_module/benchmark.go:27)	FMOVD	$f64.416312d000000000(SB), F1
+	0x0088 00136 (/Users/jan/Development/go_asm_module/benchmark.go:27)	PCDATA	$0, $-1
+	0x0088 00136 (/Users/jan/Development/go_asm_module/benchmark.go:27)	FDIVD	F1, F0, F0
+	0x008c 00140 (/Users/jan/Development/go_asm_module/benchmark.go:27)	FMOVD	F0, R0
+	0x0090 00144 (/Users/jan/Development/go_asm_module/benchmark.go:27)	CALL	runtime.convT64(SB)
+	0x0094 00148 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	$type:float64(SB), R3
+	0x009c 00156 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	R3, main..autotmp_14-16(SP)
+	0x00a0 00160 (/Users/jan/Development/go_asm_module/benchmark.go:27)	MOVD	R0, main..autotmp_14-8(SP)
+	0x00a4 00164 (/Users/jan/Development/go_asm_module/benchmark.go:27)	PCDATA	$0, $-4
+	0x00a4 00164 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x00ac 00172 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x00ac 00172 (<unknown line number>)	NOP
+	0x00ac 00172 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x00b4 00180 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."Go Addition: %d iterations in %v (%.2f ns/op)\n"(SB), R2
+	0x00bc 00188 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$46, R3
+	0x00c0 00192 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_14-48(SP), R4
+	0x00c4 00196 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$3, R5
+	0x00c8 00200 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x00cc 00204 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $0
+	0x00cc 00204 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x00d0 00208 (/Users/jan/Development/go_asm_module/benchmark.go:28)	MOVD	-8(RSP), R29
+	0x00d4 00212 (/Users/jan/Development/go_asm_module/benchmark.go:28)	MOVD.P	128(RSP), R30
+	0x00d8 00216 (/Users/jan/Development/go_asm_module/benchmark.go:28)	RET	(R30)
+	0x00dc 00220 (/Users/jan/Development/go_asm_module/benchmark.go:28)	NOP
+	0x00dc 00220 (/Users/jan/Development/go_asm_module/benchmark.go:20)	PCDATA	$1, $-1
+	0x00dc 00220 (/Users/jan/Development/go_asm_module/benchmark.go:20)	PCDATA	$0, $-2
+	0x00dc 00220 (/Users/jan/Development/go_asm_module/benchmark.go:20)	MOVD	R30, R3
+	0x00e0 00224 (/Users/jan/Development/go_asm_module/benchmark.go:20)	CALL	runtime.morestack_noctxt(SB)
+	0x00e4 00228 (/Users/jan/Development/go_asm_module/benchmark.go:20)	PCDATA	$0, $-1
+	0x00e4 00228 (/Users/jan/Development/go_asm_module/benchmark.go:20)	JMP	0
+	0x0000 90 0b 40 f9 ff 63 30 eb a9 06 00 54 fe 0f 18 f8  ..@..c0....T....
+	0x0010 fd 83 1f f8 fd 23 00 d1 00 00 00 94 e3 03 1f aa  .....#..........
+	0x0020 02 00 00 14 63 04 00 91 04 d0 92 d2 04 13 a0 f2  ....c...........
+	0x0030 7f 00 04 eb 8b ff ff 54 00 00 00 94 e0 23 00 f9  .......T.....#..
+	0x0040 ff ff 04 a9 ff ff 05 a9 ff ff 06 a9 03 00 00 90  ................
+	0x0050 63 00 00 91 e3 27 00 f9 03 00 00 90 63 00 00 91  c....'......c...
+	0x0060 e3 2b 00 f9 00 00 00 94 03 00 00 90 63 00 00 91  .+..........c...
+	0x0070 e3 2f 00 f9 e0 33 00 f9 e3 23 40 f9 60 00 62 9e  ./...3...#@.`.b.
+	0x0080 1b 00 00 90 61 03 40 fd 00 18 61 1e 00 00 66 9e  ....a.@...a...f.
+	0x0090 00 00 00 94 03 00 00 90 63 00 00 91 e3 37 00 f9  ........c....7..
+	0x00a0 e0 3b 00 f9 1b 00 00 90 61 03 40 f9 00 00 00 90  .;......a.@.....
+	0x00b0 00 00 00 91 02 00 00 90 42 00 00 91 c3 05 80 d2  ........B.......
+	0x00c0 e4 23 01 91 e5 07 40 b2 e6 03 05 aa 00 00 00 94  .#....@.........
+	0x00d0 fd 83 5f f8 fe 07 48 f8 c0 03 5f d6 e3 03 1e aa  .._...H..._.....
+	0x00e0 00 00 00 94 c7 ff ff 17 00 00 00 00 00 00 00 00  ................
+	rel 0+0 t=R_USEIFACE type:int+0
+	rel 0+0 t=R_USEIFACE type:time.Duration+0
+	rel 0+0 t=R_USEIFACE type:float64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 24+4 t=R_CALLARM64 time.Now+0
+	rel 56+4 t=R_CALLARM64 time.Since+0
+	rel 76+8 t=R_ADDRARM64 type:int+0
+	rel 88+8 t=R_ADDRARM64 main..stmp_1+0
+	rel 100+4 t=R_CALLARM64 runtime.convT64+0
+	rel 104+8 t=R_ADDRARM64 type:time.Duration+0
+	rel 128+8 t=R_ARM64_PCREL_LDST64 $f64.416312d000000000+0
+	rel 144+4 t=R_CALLARM64 runtime.convT64+0
+	rel 148+8 t=R_ADDRARM64 type:float64+0
+	rel 164+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 172+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 180+8 t=R_ADDRARM64 go:string."Go Addition: %d iterations in %v (%.2f ns/op)\n"+0
+	rel 204+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 224+4 t=R_CALLARM64 runtime.morestack_noctxt+0
+main.BenchmarkMultiplyASM STEXT size=336 args=0x0 locals=0x98 funcid=0x0 align=0x0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/benchmark.go:30)	TEXT	main.BenchmarkMultiplyASM(SB), ABIInternal, $160-0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/benchmark.go:30)	MOVD	16(g), R16
+	0x0004 00004 (/Users/jan/Development/go_asm_module/benchmark.go:30)	PCDATA	$0, $-2
+	0x0004 00004 (/Users/jan/Development/go_asm_module/benchmark.go:30)	SUB	$32, RSP, R17
+	0x0008 00008 (/Users/jan/Development/go_asm_module/benchmark.go:30)	CMP	R16, R17
+	0x000c 00012 (/Users/jan/Development/go_asm_module/benchmark.go:30)	BLS	316
+	0x0010 00016 (/Users/jan/Development/go_asm_module/benchmark.go:30)	PCDATA	$0, $-1
+	0x0010 00016 (/Users/jan/Development/go_asm_module/benchmark.go:30)	MOVD.W	R30, -160(RSP)
+	0x0014 00020 (/Users/jan/Development/go_asm_module/benchmark.go:30)	MOVD	R29, -8(RSP)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:30)	SUB	$8, RSP, R29
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:30)	FUNCDATA	$0, gclocals·Soq6RzO4SX8YA1O9euewoQ==(SB)
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:30)	FUNCDATA	$1, gclocals·ypkKCsjNF5sa+QaQBzdQzQ==(SB)
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:30)	FUNCDATA	$2, main.BenchmarkMultiplyASM.stkobj(SB)
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:31)	PCDATA	$1, $0
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:31)	CALL	time.Now(SB)
+	0x0020 00032 (/Users/jan/Development/go_asm_module/benchmark.go:31)	MOVD	R0, main..autotmp_29-64(SP)
+	0x0024 00036 (/Users/jan/Development/go_asm_module/benchmark.go:31)	MOVD	R1, main..autotmp_30-72(SP)
+	0x0028 00040 (/Users/jan/Development/go_asm_module/benchmark.go:31)	MOVD	R2, main..autotmp_31-56(SP)
+	0x002c 00044 (/Users/jan/Development/go_asm_module/benchmark.go:31)	MOVD	ZR, R3
+	0x0030 00048 (/Users/jan/Development/go_asm_module/benchmark.go:32)	JMP	136
+	0x0034 00052 (/Users/jan/Development/go_asm_module/benchmark.go:33)	MOVD	$4722366482869645214, R0
+	0x0044 00068 (/Users/jan/Development/go_asm_module/benchmark.go:33)	SMULH	R3, R0, R1
+	0x0048 00072 (/Users/jan/Development/go_asm_module/benchmark.go:33)	ASR	$8, R1, R1
+	0x004c 00076 (/Users/jan/Development/go_asm_module/benchmark.go:33)	MOVD	$1000, R2
+	0x0050 00080 (/Users/jan/Development/go_asm_module/benchmark.go:33)	MSUB	R2, R3, R1, R1
+	0x0054 00084 (/Users/jan/Development/go_asm_module/benchmark.go:33)	MOVD	R1, 8(RSP)
+	0x0058 00088 (/Users/jan/Development/go_asm_module/benchmark.go:33)	ADD	$1, R3, R1
+	0x005c 00092 (/Users/jan/Development/go_asm_module/benchmark.go:33)	MOVD	R1, main..autotmp_32-80(SP)
+	0x0060 00096 (/Users/jan/Development/go_asm_module/benchmark.go:33)	SMULH	R1, R0, R0
+	0x0064 00100 (/Users/jan/Development/go_asm_module/benchmark.go:33)	ASR	$8, R0, R0
+	0x0068 00104 (/Users/jan/Development/go_asm_module/benchmark.go:33)	MSUB	R2, R3, R0, R0
+	0x006c 00108 (/Users/jan/Development/go_asm_module/benchmark.go:33)	ADD	$1, R0, R0
+	0x0070 00112 (/Users/jan/Development/go_asm_module/benchmark.go:33)	MOVD	R0, 16(RSP)
+	0x0074 00116 (/Users/jan/Development/go_asm_module/benchmark.go:33)	PCDATA	$1, $1
+	0x0074 00116 (/Users/jan/Development/go_asm_module/benchmark.go:33)	CALL	main.multiply_asm(SB)
+	0x0078 00120 (/Users/jan/Development/go_asm_module/benchmark.go:35)	MOVD	main..autotmp_29-64(SP), R0
+	0x007c 00124 (/Users/jan/Development/go_asm_module/benchmark.go:35)	MOVD	main..autotmp_30-72(SP), R1
+	0x0080 00128 (/Users/jan/Development/go_asm_module/benchmark.go:35)	MOVD	main..autotmp_31-56(SP), R2
+	0x0084 00132 (/Users/jan/Development/go_asm_module/benchmark.go:32)	MOVD	main..autotmp_32-80(SP), R3
+	0x0088 00136 (/Users/jan/Development/go_asm_module/benchmark.go:32)	MOVD	$10000000, R4
+	0x0090 00144 (/Users/jan/Development/go_asm_module/benchmark.go:32)	CMP	R4, R3
+	0x0094 00148 (/Users/jan/Development/go_asm_module/benchmark.go:32)	BLT	52
+	0x0098 00152 (/Users/jan/Development/go_asm_module/benchmark.go:35)	PCDATA	$1, $0
+	0x0098 00152 (/Users/jan/Development/go_asm_module/benchmark.go:35)	CALL	time.Since(SB)
+	0x009c 00156 (/Users/jan/Development/go_asm_module/benchmark.go:35)	MOVD	R0, main.duration-88(SP)
+	0x00a0 00160 (/Users/jan/Development/go_asm_module/benchmark.go:36)	STP	(ZR, ZR), main..autotmp_16-48(SP)
+	0x00a4 00164 (/Users/jan/Development/go_asm_module/benchmark.go:36)	STP	(ZR, ZR), main..autotmp_16-32(SP)
+	0x00a8 00168 (/Users/jan/Development/go_asm_module/benchmark.go:36)	STP	(ZR, ZR), main..autotmp_16-16(SP)
+	0x00ac 00172 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	$type:int(SB), R3
+	0x00b4 00180 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	R3, main..autotmp_16-48(SP)
+	0x00b8 00184 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	$main..stmp_2(SB), R3
+	0x00c0 00192 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	R3, main..autotmp_16-40(SP)
+	0x00c4 00196 (/Users/jan/Development/go_asm_module/benchmark.go:37)	PCDATA	$1, $2
+	0x00c4 00196 (/Users/jan/Development/go_asm_module/benchmark.go:37)	CALL	runtime.convT64(SB)
+	0x00c8 00200 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	$type:time.Duration(SB), R3
+	0x00d0 00208 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	R3, main..autotmp_16-32(SP)
+	0x00d4 00212 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	R0, main..autotmp_16-24(SP)
+	0x00d8 00216 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	main.duration-88(SP), R3
+	0x00dc 00220 (/Users/jan/Development/go_asm_module/benchmark.go:37)	SCVTFD	R3, F0
+	0x00e0 00224 (/Users/jan/Development/go_asm_module/benchmark.go:37)	PCDATA	$0, $-3
+	0x00e0 00224 (/Users/jan/Development/go_asm_module/benchmark.go:37)	FMOVD	$f64.416312d000000000(SB), F1
+	0x00e8 00232 (/Users/jan/Development/go_asm_module/benchmark.go:37)	PCDATA	$0, $-1
+	0x00e8 00232 (/Users/jan/Development/go_asm_module/benchmark.go:37)	FDIVD	F1, F0, F0
+	0x00ec 00236 (/Users/jan/Development/go_asm_module/benchmark.go:37)	FMOVD	F0, R0
+	0x00f0 00240 (/Users/jan/Development/go_asm_module/benchmark.go:37)	CALL	runtime.convT64(SB)
+	0x00f4 00244 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	$type:float64(SB), R3
+	0x00fc 00252 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	R3, main..autotmp_16-16(SP)
+	0x0100 00256 (/Users/jan/Development/go_asm_module/benchmark.go:37)	MOVD	R0, main..autotmp_16-8(SP)
+	0x0104 00260 (/Users/jan/Development/go_asm_module/benchmark.go:37)	PCDATA	$0, $-4
+	0x0104 00260 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x010c 00268 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x010c 00268 (<unknown line number>)	NOP
+	0x010c 00268 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x0114 00276 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."ASM Multiplication: %d iterations in %v (%.2f ns/op)\n"(SB), R2
+	0x011c 00284 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$53, R3
+	0x0120 00288 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_16-48(SP), R4
+	0x0124 00292 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$3, R5
+	0x0128 00296 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x012c 00300 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $0
+	0x012c 00300 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x0130 00304 (/Users/jan/Development/go_asm_module/benchmark.go:38)	MOVD	-8(RSP), R29
+	0x0134 00308 (/Users/jan/Development/go_asm_module/benchmark.go:38)	MOVD.P	160(RSP), R30
+	0x0138 00312 (/Users/jan/Development/go_asm_module/benchmark.go:38)	RET	(R30)
+	0x013c 00316 (/Users/jan/Development/go_asm_module/benchmark.go:38)	NOP
+	0x013c 00316 (/Users/jan/Development/go_asm_module/benchmark.go:30)	PCDATA	$1, $-1
+	0x013c 00316 (/Users/jan/Development/go_asm_module/benchmark.go:30)	PCDATA	$0, $-2
+	0x013c 00316 (/Users/jan/Development/go_asm_module/benchmark.go:30)	MOVD	R30, R3
+	0x0140 00320 (/Users/jan/Development/go_asm_module/benchmark.go:30)	CALL	runtime.morestack_noctxt(SB)
+	0x0144 00324 (/Users/jan/Development/go_asm_module/benchmark.go:30)	PCDATA	$0, $-1
+	0x0144 00324 (/Users/jan/Development/go_asm_module/benchmark.go:30)	JMP	0
+	0x0000 90 0b 40 f9 f1 83 00 d1 3f 02 10 eb 89 09 00 54  ..@.....?......T
+	0x0010 fe 0f 16 f8 fd 83 1f f8 fd 23 00 d1 00 00 00 94  .........#......
+	0x0020 e0 2f 00 f9 e1 2b 00 f9 e2 33 00 f9 e3 03 1f aa  ./...+...3......
+	0x0030 16 00 00 14 c0 f3 9d d2 e0 d4 b8 f2 60 e9 c6 f2  ............`...
+	0x0040 20 31 e8 f2 01 7c 43 9b 21 fc 48 93 02 7d 80 d2   1...|C.!.H..}..
+	0x0050 21 8c 02 9b e1 07 00 f9 61 04 00 91 e1 27 00 f9  !.......a....'..
+	0x0060 00 7c 41 9b 00 fc 48 93 00 8c 02 9b 00 04 00 91  .|A...H.........
+	0x0070 e0 0b 00 f9 00 00 00 94 e0 2f 40 f9 e1 2b 40 f9  ........./@..+@.
+	0x0080 e2 33 40 f9 e3 27 40 f9 04 d0 92 d2 04 13 a0 f2  .3@..'@.........
+	0x0090 7f 00 04 eb 0b fd ff 54 00 00 00 94 e0 23 00 f9  .......T.....#..
+	0x00a0 ff ff 06 a9 ff ff 07 a9 ff ff 08 a9 03 00 00 90  ................
+	0x00b0 63 00 00 91 e3 37 00 f9 03 00 00 90 63 00 00 91  c....7......c...
+	0x00c0 e3 3b 00 f9 00 00 00 94 03 00 00 90 63 00 00 91  .;..........c...
+	0x00d0 e3 3f 00 f9 e0 43 00 f9 e3 23 40 f9 60 00 62 9e  .?...C...#@.`.b.
+	0x00e0 1b 00 00 90 61 03 40 fd 00 18 61 1e 00 00 66 9e  ....a.@...a...f.
+	0x00f0 00 00 00 94 03 00 00 90 63 00 00 91 e3 47 00 f9  ........c....G..
+	0x0100 e0 4b 00 f9 1b 00 00 90 61 03 40 f9 00 00 00 90  .K......a.@.....
+	0x0110 00 00 00 91 02 00 00 90 42 00 00 91 a3 06 80 d2  ........B.......
+	0x0120 e4 a3 01 91 e5 07 40 b2 e6 03 05 aa 00 00 00 94  ......@.........
+	0x0130 fd 83 5f f8 fe 07 4a f8 c0 03 5f d6 e3 03 1e aa  .._...J..._.....
+	0x0140 00 00 00 94 af ff ff 17 00 00 00 00 00 00 00 00  ................
+	rel 0+0 t=R_USEIFACE type:int+0
+	rel 0+0 t=R_USEIFACE type:time.Duration+0
+	rel 0+0 t=R_USEIFACE type:float64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 28+4 t=R_CALLARM64 time.Now+0
+	rel 116+4 t=R_CALLARM64 main.multiply_asm+0
+	rel 152+4 t=R_CALLARM64 time.Since+0
+	rel 172+8 t=R_ADDRARM64 type:int+0
+	rel 184+8 t=R_ADDRARM64 main..stmp_2+0
+	rel 196+4 t=R_CALLARM64 runtime.convT64+0
+	rel 200+8 t=R_ADDRARM64 type:time.Duration+0
+	rel 224+8 t=R_ARM64_PCREL_LDST64 $f64.416312d000000000+0
+	rel 240+4 t=R_CALLARM64 runtime.convT64+0
+	rel 244+8 t=R_ADDRARM64 type:float64+0
+	rel 260+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 268+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 276+8 t=R_ADDRARM64 go:string."ASM Multiplication: %d iterations in %v (%.2f ns/op)\n"+0
+	rel 300+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 320+4 t=R_CALLARM64 runtime.morestack_noctxt+0
+main.BenchmarkMultiplyGo STEXT size=240 args=0x0 locals=0x78 funcid=0x0 align=0x0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/benchmark.go:40)	TEXT	main.BenchmarkMultiplyGo(SB), ABIInternal, $128-0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/benchmark.go:40)	MOVD	16(g), R16
+	0x0004 00004 (/Users/jan/Development/go_asm_module/benchmark.go:40)	PCDATA	$0, $-2
+	0x0004 00004 (/Users/jan/Development/go_asm_module/benchmark.go:40)	CMP	R16, RSP
+	0x0008 00008 (/Users/jan/Development/go_asm_module/benchmark.go:40)	BLS	220
+	0x000c 00012 (/Users/jan/Development/go_asm_module/benchmark.go:40)	PCDATA	$0, $-1
+	0x000c 00012 (/Users/jan/Development/go_asm_module/benchmark.go:40)	MOVD.W	R30, -128(RSP)
+	0x0010 00016 (/Users/jan/Development/go_asm_module/benchmark.go:40)	MOVD	R29, -8(RSP)
+	0x0014 00020 (/Users/jan/Development/go_asm_module/benchmark.go:40)	SUB	$8, RSP, R29
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:40)	FUNCDATA	$0, gclocals·ISb46fRPFoZ9pIfykFK/kQ==(SB)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:40)	FUNCDATA	$1, gclocals·Kuc7Ru8erybFG+YfMgZ+3g==(SB)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:40)	FUNCDATA	$2, main.BenchmarkMultiplyGo.stkobj(SB)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:41)	PCDATA	$1, $0
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:41)	CALL	time.Now(SB)
+	0x001c 00028 (/Users/jan/Development/go_asm_module/benchmark.go:41)	MOVD	ZR, R3
+	0x0020 00032 (/Users/jan/Development/go_asm_module/benchmark.go:42)	JMP	40
+	0x0024 00036 (/Users/jan/Development/go_asm_module/benchmark.go:42)	ADD	$1, R3, R3
+	0x0028 00040 (/Users/jan/Development/go_asm_module/benchmark.go:42)	MOVD	$10000000, R4
+	0x0030 00048 (/Users/jan/Development/go_asm_module/benchmark.go:42)	CMP	R4, R3
+	0x0034 00052 (/Users/jan/Development/go_asm_module/benchmark.go:42)	BLT	36
+	0x0038 00056 (/Users/jan/Development/go_asm_module/benchmark.go:45)	CALL	time.Since(SB)
+	0x003c 00060 (/Users/jan/Development/go_asm_module/benchmark.go:45)	MOVD	R0, main.duration-56(SP)
+	0x0040 00064 (/Users/jan/Development/go_asm_module/benchmark.go:46)	STP	(ZR, ZR), main..autotmp_14-48(SP)
+	0x0044 00068 (/Users/jan/Development/go_asm_module/benchmark.go:46)	STP	(ZR, ZR), main..autotmp_14-32(SP)
+	0x0048 00072 (/Users/jan/Development/go_asm_module/benchmark.go:46)	STP	(ZR, ZR), main..autotmp_14-16(SP)
+	0x004c 00076 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	$type:int(SB), R3
+	0x0054 00084 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	R3, main..autotmp_14-48(SP)
+	0x0058 00088 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	$main..stmp_3(SB), R3
+	0x0060 00096 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	R3, main..autotmp_14-40(SP)
+	0x0064 00100 (/Users/jan/Development/go_asm_module/benchmark.go:47)	PCDATA	$1, $1
+	0x0064 00100 (/Users/jan/Development/go_asm_module/benchmark.go:47)	CALL	runtime.convT64(SB)
+	0x0068 00104 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	$type:time.Duration(SB), R3
+	0x0070 00112 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	R3, main..autotmp_14-32(SP)
+	0x0074 00116 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	R0, main..autotmp_14-24(SP)
+	0x0078 00120 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	main.duration-56(SP), R3
+	0x007c 00124 (/Users/jan/Development/go_asm_module/benchmark.go:47)	SCVTFD	R3, F0
+	0x0080 00128 (/Users/jan/Development/go_asm_module/benchmark.go:47)	PCDATA	$0, $-3
+	0x0080 00128 (/Users/jan/Development/go_asm_module/benchmark.go:47)	FMOVD	$f64.416312d000000000(SB), F1
+	0x0088 00136 (/Users/jan/Development/go_asm_module/benchmark.go:47)	PCDATA	$0, $-1
+	0x0088 00136 (/Users/jan/Development/go_asm_module/benchmark.go:47)	FDIVD	F1, F0, F0
+	0x008c 00140 (/Users/jan/Development/go_asm_module/benchmark.go:47)	FMOVD	F0, R0
+	0x0090 00144 (/Users/jan/Development/go_asm_module/benchmark.go:47)	CALL	runtime.convT64(SB)
+	0x0094 00148 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	$type:float64(SB), R3
+	0x009c 00156 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	R3, main..autotmp_14-16(SP)
+	0x00a0 00160 (/Users/jan/Development/go_asm_module/benchmark.go:47)	MOVD	R0, main..autotmp_14-8(SP)
+	0x00a4 00164 (/Users/jan/Development/go_asm_module/benchmark.go:47)	PCDATA	$0, $-4
+	0x00a4 00164 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x00ac 00172 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x00ac 00172 (<unknown line number>)	NOP
+	0x00ac 00172 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x00b4 00180 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."Go Multiplication: %d iterations in %v (%.2f ns/op)\n"(SB), R2
+	0x00bc 00188 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$52, R3
+	0x00c0 00192 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_14-48(SP), R4
+	0x00c4 00196 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$3, R5
+	0x00c8 00200 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x00cc 00204 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $0
+	0x00cc 00204 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x00d0 00208 (/Users/jan/Development/go_asm_module/benchmark.go:48)	MOVD	-8(RSP), R29
+	0x00d4 00212 (/Users/jan/Development/go_asm_module/benchmark.go:48)	MOVD.P	128(RSP), R30
+	0x00d8 00216 (/Users/jan/Development/go_asm_module/benchmark.go:48)	RET	(R30)
+	0x00dc 00220 (/Users/jan/Development/go_asm_module/benchmark.go:48)	NOP
+	0x00dc 00220 (/Users/jan/Development/go_asm_module/benchmark.go:40)	PCDATA	$1, $-1
+	0x00dc 00220 (/Users/jan/Development/go_asm_module/benchmark.go:40)	PCDATA	$0, $-2
+	0x00dc 00220 (/Users/jan/Development/go_asm_module/benchmark.go:40)	MOVD	R30, R3
+	0x00e0 00224 (/Users/jan/Development/go_asm_module/benchmark.go:40)	CALL	runtime.morestack_noctxt(SB)
+	0x00e4 00228 (/Users/jan/Development/go_asm_module/benchmark.go:40)	PCDATA	$0, $-1
+	0x00e4 00228 (/Users/jan/Development/go_asm_module/benchmark.go:40)	JMP	0
+	0x0000 90 0b 40 f9 ff 63 30 eb a9 06 00 54 fe 0f 18 f8  ..@..c0....T....
+	0x0010 fd 83 1f f8 fd 23 00 d1 00 00 00 94 e3 03 1f aa  .....#..........
+	0x0020 02 00 00 14 63 04 00 91 04 d0 92 d2 04 13 a0 f2  ....c...........
+	0x0030 7f 00 04 eb 8b ff ff 54 00 00 00 94 e0 23 00 f9  .......T.....#..
+	0x0040 ff ff 04 a9 ff ff 05 a9 ff ff 06 a9 03 00 00 90  ................
+	0x0050 63 00 00 91 e3 27 00 f9 03 00 00 90 63 00 00 91  c....'......c...
+	0x0060 e3 2b 00 f9 00 00 00 94 03 00 00 90 63 00 00 91  .+..........c...
+	0x0070 e3 2f 00 f9 e0 33 00 f9 e3 23 40 f9 60 00 62 9e  ./...3...#@.`.b.
+	0x0080 1b 00 00 90 61 03 40 fd 00 18 61 1e 00 00 66 9e  ....a.@...a...f.
+	0x0090 00 00 00 94 03 00 00 90 63 00 00 91 e3 37 00 f9  ........c....7..
+	0x00a0 e0 3b 00 f9 1b 00 00 90 61 03 40 f9 00 00 00 90  .;......a.@.....
+	0x00b0 00 00 00 91 02 00 00 90 42 00 00 91 83 06 80 d2  ........B.......
+	0x00c0 e4 23 01 91 e5 07 40 b2 e6 03 05 aa 00 00 00 94  .#....@.........
+	0x00d0 fd 83 5f f8 fe 07 48 f8 c0 03 5f d6 e3 03 1e aa  .._...H..._.....
+	0x00e0 00 00 00 94 c7 ff ff 17 00 00 00 00 00 00 00 00  ................
+	rel 0+0 t=R_USEIFACE type:int+0
+	rel 0+0 t=R_USEIFACE type:time.Duration+0
+	rel 0+0 t=R_USEIFACE type:float64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 24+4 t=R_CALLARM64 time.Now+0
+	rel 56+4 t=R_CALLARM64 time.Since+0
+	rel 76+8 t=R_ADDRARM64 type:int+0
+	rel 88+8 t=R_ADDRARM64 main..stmp_3+0
+	rel 100+4 t=R_CALLARM64 runtime.convT64+0
+	rel 104+8 t=R_ADDRARM64 type:time.Duration+0
+	rel 128+8 t=R_ARM64_PCREL_LDST64 $f64.416312d000000000+0
+	rel 144+4 t=R_CALLARM64 runtime.convT64+0
+	rel 148+8 t=R_ADDRARM64 type:float64+0
+	rel 164+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 172+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 180+8 t=R_ADDRARM64 go:string."Go Multiplication: %d iterations in %v (%.2f ns/op)\n"+0
+	rel 204+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 224+4 t=R_CALLARM64 runtime.morestack_noctxt+0
+main.runBenchmarks STEXT size=224 args=0x0 locals=0x58 funcid=0x0 align=0x0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/benchmark.go:50)	TEXT	main.runBenchmarks(SB), ABIInternal, $96-0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/benchmark.go:50)	MOVD	16(g), R16
+	0x0004 00004 (/Users/jan/Development/go_asm_module/benchmark.go:50)	PCDATA	$0, $-2
+	0x0004 00004 (/Users/jan/Development/go_asm_module/benchmark.go:50)	CMP	R16, RSP
+	0x0008 00008 (/Users/jan/Development/go_asm_module/benchmark.go:50)	BLS	200
+	0x000c 00012 (/Users/jan/Development/go_asm_module/benchmark.go:50)	PCDATA	$0, $-1
+	0x000c 00012 (/Users/jan/Development/go_asm_module/benchmark.go:50)	MOVD.W	R30, -96(RSP)
+	0x0010 00016 (/Users/jan/Development/go_asm_module/benchmark.go:50)	MOVD	R29, -8(RSP)
+	0x0014 00020 (/Users/jan/Development/go_asm_module/benchmark.go:50)	SUB	$8, RSP, R29
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:50)	FUNCDATA	$0, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:50)	FUNCDATA	$1, gclocals·/AgNGF46ePWGN7m4rxCffw==(SB)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:50)	FUNCDATA	$2, main.runBenchmarks.stkobj(SB)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/benchmark.go:51)	MOVD	$type:string(SB), R5
+	0x0020 00032 (/Users/jan/Development/go_asm_module/benchmark.go:51)	MOVD	R5, main..autotmp_18-16(SP)
+	0x0024 00036 (/Users/jan/Development/go_asm_module/benchmark.go:51)	MOVD	$main..stmp_4(SB), R5
+	0x002c 00044 (/Users/jan/Development/go_asm_module/benchmark.go:51)	MOVD	R5, main..autotmp_18-8(SP)
+	0x0030 00048 (/Users/jan/Development/go_asm_module/benchmark.go:51)	PCDATA	$0, $-3
+	0x0030 00048 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	os.Stdout(SB), R1
+	0x0038 00056 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	PCDATA	$0, $-1
+	0x0038 00056 (<unknown line number>)	NOP
+	0x0038 00056 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x0040 00064 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$main..autotmp_18-16(SP), R2
+	0x0044 00068 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$1, R3
+	0x0048 00072 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	R3, R4
+	0x004c 00076 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	PCDATA	$1, $0
+	0x004c 00076 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	CALL	fmt.Fprintln(SB)
+	0x0050 00080 (/Users/jan/Development/go_asm_module/benchmark.go:52)	MOVD	$type:string(SB), R5
+	0x0058 00088 (/Users/jan/Development/go_asm_module/benchmark.go:52)	MOVD	R5, main..autotmp_20-32(SP)
+	0x005c 00092 (/Users/jan/Development/go_asm_module/benchmark.go:52)	MOVD	$main..stmp_5(SB), R5
+	0x0064 00100 (/Users/jan/Development/go_asm_module/benchmark.go:52)	MOVD	R5, main..autotmp_20-24(SP)
+	0x0068 00104 (/Users/jan/Development/go_asm_module/benchmark.go:52)	PCDATA	$0, $-4
+	0x0068 00104 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	os.Stdout(SB), R1
+	0x0070 00112 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	PCDATA	$0, $-1
+	0x0070 00112 (<unknown line number>)	NOP
+	0x0070 00112 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x0078 00120 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$main..autotmp_20-32(SP), R2
+	0x007c 00124 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$1, R3
+	0x0080 00128 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	R3, R4
+	0x0084 00132 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	CALL	fmt.Fprintln(SB)
+	0x0088 00136 (/Users/jan/Development/go_asm_module/benchmark.go:54)	CALL	main.BenchmarkAddGo(SB)
+	0x008c 00140 (/Users/jan/Development/go_asm_module/benchmark.go:55)	CALL	main.BenchmarkAddASM(SB)
+	0x0090 00144 (/Users/jan/Development/go_asm_module/benchmark.go:55)	PCDATA	$0, $-3
+	0x0090 00144 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	os.Stdout(SB), R1
+	0x0098 00152 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	PCDATA	$0, $-1
+	0x0098 00152 (/Users/jan/Development/go_asm_module/benchmark.go:56)	HINT	$0
+	0x009c 00156 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x00a4 00164 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	ZR, R2
+	0x00a8 00168 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	ZR, R3
+	0x00ac 00172 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	R3, R4
+	0x00b0 00176 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	CALL	fmt.Fprintln(SB)
+	0x00b4 00180 (/Users/jan/Development/go_asm_module/benchmark.go:57)	CALL	main.BenchmarkMultiplyGo(SB)
+	0x00b8 00184 (/Users/jan/Development/go_asm_module/benchmark.go:58)	CALL	main.BenchmarkMultiplyASM(SB)
+	0x00bc 00188 (/Users/jan/Development/go_asm_module/benchmark.go:59)	MOVD	-8(RSP), R29
+	0x00c0 00192 (/Users/jan/Development/go_asm_module/benchmark.go:59)	MOVD.P	96(RSP), R30
+	0x00c4 00196 (/Users/jan/Development/go_asm_module/benchmark.go:59)	RET	(R30)
+	0x00c8 00200 (/Users/jan/Development/go_asm_module/benchmark.go:59)	NOP
+	0x00c8 00200 (/Users/jan/Development/go_asm_module/benchmark.go:50)	PCDATA	$1, $-1
+	0x00c8 00200 (/Users/jan/Development/go_asm_module/benchmark.go:50)	PCDATA	$0, $-2
+	0x00c8 00200 (/Users/jan/Development/go_asm_module/benchmark.go:50)	MOVD	R30, R3
+	0x00cc 00204 (/Users/jan/Development/go_asm_module/benchmark.go:50)	CALL	runtime.morestack_noctxt(SB)
+	0x00d0 00208 (/Users/jan/Development/go_asm_module/benchmark.go:50)	PCDATA	$0, $-1
+	0x00d0 00208 (/Users/jan/Development/go_asm_module/benchmark.go:50)	JMP	0
+	0x0000 90 0b 40 f9 ff 63 30 eb 09 06 00 54 fe 0f 1a f8  ..@..c0....T....
+	0x0010 fd 83 1f f8 fd 23 00 d1 05 00 00 90 a5 00 00 91  .....#..........
+	0x0020 e5 27 00 f9 05 00 00 90 a5 00 00 91 e5 2b 00 f9  .'...........+..
+	0x0030 1b 00 00 90 61 03 40 f9 00 00 00 90 00 00 00 91  ....a.@.........
+	0x0040 e2 23 01 91 e3 03 40 b2 e4 03 03 aa 00 00 00 94  .#....@.........
+	0x0050 05 00 00 90 a5 00 00 91 e5 1f 00 f9 05 00 00 90  ................
+	0x0060 a5 00 00 91 e5 23 00 f9 1b 00 00 90 61 03 40 f9  .....#......a.@.
+	0x0070 00 00 00 90 00 00 00 91 e2 e3 00 91 e3 03 40 b2  ..............@.
+	0x0080 e4 03 03 aa 00 00 00 94 00 00 00 94 00 00 00 94  ................
+	0x0090 1b 00 00 90 61 03 40 f9 1f 20 03 d5 00 00 00 90  ....a.@.. ......
+	0x00a0 00 00 00 91 e2 03 1f aa e3 03 1f aa e4 03 03 aa  ................
+	0x00b0 00 00 00 94 00 00 00 94 00 00 00 94 fd 83 5f f8  .............._.
+	0x00c0 fe 07 46 f8 c0 03 5f d6 e3 03 1e aa 00 00 00 94  ..F..._.........
+	0x00d0 cc ff ff 17 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 0+0 t=R_USEIFACE type:string+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:string+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 24+8 t=R_ADDRARM64 type:string+0
+	rel 36+8 t=R_ADDRARM64 main..stmp_4+0
+	rel 48+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 56+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 76+4 t=R_CALLARM64 fmt.Fprintln+0
+	rel 80+8 t=R_ADDRARM64 type:string+0
+	rel 92+8 t=R_ADDRARM64 main..stmp_5+0
+	rel 104+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 112+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 132+4 t=R_CALLARM64 fmt.Fprintln+0
+	rel 136+4 t=R_CALLARM64 main.BenchmarkAddGo+0
+	rel 140+4 t=R_CALLARM64 main.BenchmarkAddASM+0
+	rel 144+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 156+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 176+4 t=R_CALLARM64 fmt.Fprintln+0
+	rel 180+4 t=R_CALLARM64 main.BenchmarkMultiplyGo+0
+	rel 184+4 t=R_CALLARM64 main.BenchmarkMultiplyASM+0
+	rel 204+4 t=R_CALLARM64 runtime.morestack_noctxt+0
+main.main STEXT size=1744 args=0x0 locals=0x258 funcid=0x0 align=0x0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/main.go:15)	TEXT	main.main(SB), ABIInternal, $608-0
+	0x0000 00000 (/Users/jan/Development/go_asm_module/main.go:15)	MOVD	16(g), R16
+	0x0004 00004 (/Users/jan/Development/go_asm_module/main.go:15)	PCDATA	$0, $-2
+	0x0004 00004 (/Users/jan/Development/go_asm_module/main.go:15)	SUB	$480, RSP, R17
+	0x0008 00008 (/Users/jan/Development/go_asm_module/main.go:15)	CMP	R16, R17
+	0x000c 00012 (/Users/jan/Development/go_asm_module/main.go:15)	BLS	1724
+	0x0010 00016 (/Users/jan/Development/go_asm_module/main.go:15)	PCDATA	$0, $-1
+	0x0010 00016 (/Users/jan/Development/go_asm_module/main.go:15)	SUB	$608, RSP, R20
+	0x0014 00020 (/Users/jan/Development/go_asm_module/main.go:15)	STP	(R29, R30), -8(R20)
+	0x0018 00024 (/Users/jan/Development/go_asm_module/main.go:15)	PCDATA	$0, $-2
+	0x0018 00024 (/Users/jan/Development/go_asm_module/main.go:15)	MOVD	R20, RSP
+	0x001c 00028 (/Users/jan/Development/go_asm_module/main.go:15)	PCDATA	$0, $-1
+	0x001c 00028 (/Users/jan/Development/go_asm_module/main.go:15)	SUB	$8, RSP, R29
+	0x0020 00032 (/Users/jan/Development/go_asm_module/main.go:15)	FUNCDATA	$0, gclocals·ltvLmerAjrWHAJDln24GsQ==(SB)
+	0x0020 00032 (/Users/jan/Development/go_asm_module/main.go:15)	FUNCDATA	$1, gclocals·fP61dzXZepefo8DUzX48+w==(SB)
+	0x0020 00032 (/Users/jan/Development/go_asm_module/main.go:15)	FUNCDATA	$2, main.main.stkobj(SB)
+	0x0020 00032 (/Users/jan/Development/go_asm_module/main.go:16)	MOVD	$type:string(SB), R5
+	0x0028 00040 (/Users/jan/Development/go_asm_module/main.go:16)	MOVD	R5, main..autotmp_100-16(SP)
+	0x002c 00044 (/Users/jan/Development/go_asm_module/main.go:16)	MOVD	$main..stmp_6(SB), R5
+	0x0034 00052 (/Users/jan/Development/go_asm_module/main.go:16)	MOVD	R5, main..autotmp_100-8(SP)
+	0x0038 00056 (/Users/jan/Development/go_asm_module/main.go:16)	PCDATA	$0, $-3
+	0x0038 00056 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	os.Stdout(SB), R1
+	0x0040 00064 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	PCDATA	$0, $-1
+	0x0040 00064 (<unknown line number>)	NOP
+	0x0040 00064 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x0048 00072 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$main..autotmp_100-16(SP), R2
+	0x004c 00076 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$1, R3
+	0x0050 00080 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	R3, R4
+	0x0054 00084 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	PCDATA	$1, $0
+	0x0054 00084 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	CALL	fmt.Fprintln(SB)
+	0x0058 00088 (/Users/jan/Development/go_asm_module/main.go:17)	MOVD	$type:string(SB), R5
+	0x0060 00096 (/Users/jan/Development/go_asm_module/main.go:17)	MOVD	R5, main..autotmp_102-32(SP)
+	0x0064 00100 (/Users/jan/Development/go_asm_module/main.go:17)	MOVD	$main..stmp_7(SB), R5
+	0x006c 00108 (/Users/jan/Development/go_asm_module/main.go:17)	MOVD	R5, main..autotmp_102-24(SP)
+	0x0070 00112 (/Users/jan/Development/go_asm_module/main.go:17)	PCDATA	$0, $-4
+	0x0070 00112 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	os.Stdout(SB), R1
+	0x0078 00120 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	PCDATA	$0, $-1
+	0x0078 00120 (<unknown line number>)	NOP
+	0x0078 00120 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x0080 00128 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$main..autotmp_102-32(SP), R2
+	0x0084 00132 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$1, R3
+	0x0088 00136 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	R3, R4
+	0x008c 00140 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	CALL	fmt.Fprintln(SB)
+	0x0090 00144 (/Users/jan/Development/go_asm_module/main.go:21)	MOVD	$15, R5
+	0x0094 00148 (/Users/jan/Development/go_asm_module/main.go:21)	MOVD	R5, 8(RSP)
+	0x0098 00152 (/Users/jan/Development/go_asm_module/main.go:21)	MOVD	$27, R5
+	0x009c 00156 (/Users/jan/Development/go_asm_module/main.go:21)	MOVD	R5, 16(RSP)
+	0x00a0 00160 (/Users/jan/Development/go_asm_module/main.go:21)	CALL	main.add_asm(SB)
+	0x00a4 00164 (/Users/jan/Development/go_asm_module/main.go:21)	MOVD	24(RSP), R5
+	0x00a8 00168 (/Users/jan/Development/go_asm_module/main.go:21)	MOVD	R5, main.sum-536(SP)
+	0x00ac 00172 (/Users/jan/Development/go_asm_module/main.go:21)	PCDATA	$0, $-3
+	0x00ac 00172 (/Users/jan/Development/go_asm_module/main.go:22)	STP	(ZR, ZR), main..autotmp_104-80(SP)
+	0x00b4 00180 (/Users/jan/Development/go_asm_module/main.go:22)	PCDATA	$0, $-4
+	0x00b4 00180 (/Users/jan/Development/go_asm_module/main.go:22)	STP	(ZR, ZR), main..autotmp_104-64(SP)
+	0x00bc 00188 (/Users/jan/Development/go_asm_module/main.go:22)	PCDATA	$0, $-3
+	0x00bc 00188 (/Users/jan/Development/go_asm_module/main.go:22)	STP	(ZR, ZR), main..autotmp_104-48(SP)
+	0x00c4 00196 (/Users/jan/Development/go_asm_module/main.go:22)	PCDATA	$0, $-1
+	0x00c4 00196 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	$15, R0
+	0x00c8 00200 (/Users/jan/Development/go_asm_module/main.go:22)	PCDATA	$1, $1
+	0x00c8 00200 (/Users/jan/Development/go_asm_module/main.go:22)	CALL	runtime.convT64(SB)
+	0x00cc 00204 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	$type:int64(SB), R5
+	0x00d4 00212 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	R5, main..autotmp_104-80(SP)
+	0x00d8 00216 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	R0, main..autotmp_104-72(SP)
+	0x00dc 00220 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	$27, R0
+	0x00e0 00224 (/Users/jan/Development/go_asm_module/main.go:22)	CALL	runtime.convT64(SB)
+	0x00e4 00228 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	$type:int64(SB), R5
+	0x00ec 00236 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	R5, main..autotmp_104-64(SP)
+	0x00f0 00240 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	R0, main..autotmp_104-56(SP)
+	0x00f4 00244 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	main.sum-536(SP), R0
+	0x00f8 00248 (/Users/jan/Development/go_asm_module/main.go:22)	CALL	runtime.convT64(SB)
+	0x00fc 00252 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	$type:int64(SB), R5
+	0x0104 00260 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	R5, main..autotmp_104-48(SP)
+	0x0108 00264 (/Users/jan/Development/go_asm_module/main.go:22)	MOVD	R0, main..autotmp_104-40(SP)
+	0x010c 00268 (/Users/jan/Development/go_asm_module/main.go:22)	PCDATA	$0, $-4
+	0x010c 00268 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x0114 00276 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x0114 00276 (<unknown line number>)	NOP
+	0x0114 00276 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x011c 00284 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."Addition: %d + %d = %d\n"(SB), R2
+	0x0124 00292 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$23, R3
+	0x0128 00296 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_104-80(SP), R4
+	0x012c 00300 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$3, R5
+	0x0130 00304 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x0134 00308 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $0
+	0x0134 00308 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x0138 00312 (/Users/jan/Development/go_asm_module/main.go:26)	MOVD	$8, R5
+	0x013c 00316 (/Users/jan/Development/go_asm_module/main.go:26)	MOVD	R5, 8(RSP)
+	0x0140 00320 (/Users/jan/Development/go_asm_module/main.go:26)	MOVD	$9, R5
+	0x0144 00324 (/Users/jan/Development/go_asm_module/main.go:26)	MOVD	R5, 16(RSP)
+	0x0148 00328 (/Users/jan/Development/go_asm_module/main.go:26)	CALL	main.multiply_asm(SB)
+	0x014c 00332 (/Users/jan/Development/go_asm_module/main.go:26)	MOVD	24(RSP), R5
+	0x0150 00336 (/Users/jan/Development/go_asm_module/main.go:26)	MOVD	R5, main.product-520(SP)
+	0x0154 00340 (/Users/jan/Development/go_asm_module/main.go:27)	STP	(ZR, ZR), main..autotmp_109-128(SP)
+	0x0158 00344 (/Users/jan/Development/go_asm_module/main.go:27)	STP	(ZR, ZR), main..autotmp_109-112(SP)
+	0x015c 00348 (/Users/jan/Development/go_asm_module/main.go:27)	STP	(ZR, ZR), main..autotmp_109-96(SP)
+	0x0160 00352 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	$8, R0
+	0x0164 00356 (/Users/jan/Development/go_asm_module/main.go:27)	PCDATA	$1, $2
+	0x0164 00356 (/Users/jan/Development/go_asm_module/main.go:27)	CALL	runtime.convT64(SB)
+	0x0168 00360 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	$type:int64(SB), R5
+	0x0170 00368 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	R5, main..autotmp_109-128(SP)
+	0x0174 00372 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	R0, main..autotmp_109-120(SP)
+	0x0178 00376 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	$9, R0
+	0x017c 00380 (/Users/jan/Development/go_asm_module/main.go:27)	CALL	runtime.convT64(SB)
+	0x0180 00384 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	$type:int64(SB), R5
+	0x0188 00392 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	R5, main..autotmp_109-112(SP)
+	0x018c 00396 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	R0, main..autotmp_109-104(SP)
+	0x0190 00400 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	main.product-520(SP), R0
+	0x0194 00404 (/Users/jan/Development/go_asm_module/main.go:27)	CALL	runtime.convT64(SB)
+	0x0198 00408 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	$type:int64(SB), R5
+	0x01a0 00416 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	R5, main..autotmp_109-96(SP)
+	0x01a4 00420 (/Users/jan/Development/go_asm_module/main.go:27)	MOVD	R0, main..autotmp_109-88(SP)
+	0x01a8 00424 (/Users/jan/Development/go_asm_module/main.go:27)	PCDATA	$0, $-3
+	0x01a8 00424 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x01b0 00432 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x01b0 00432 (<unknown line number>)	NOP
+	0x01b0 00432 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x01b8 00440 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."Multiplication: %d * %d = %d\n"(SB), R2
+	0x01c0 00448 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$29, R3
+	0x01c4 00452 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_109-128(SP), R4
+	0x01c8 00456 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$3, R5
+	0x01cc 00460 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x01d0 00464 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $0
+	0x01d0 00464 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x01d4 00468 (/Users/jan/Development/go_asm_module/main.go:31)	MOVD	$6, R5
+	0x01d8 00472 (/Users/jan/Development/go_asm_module/main.go:31)	MOVD	R5, 8(RSP)
+	0x01dc 00476 (/Users/jan/Development/go_asm_module/main.go:31)	CALL	main.factorial_asm(SB)
+	0x01e0 00480 (/Users/jan/Development/go_asm_module/main.go:31)	MOVD	16(RSP), R5
+	0x01e4 00484 (/Users/jan/Development/go_asm_module/main.go:31)	MOVD	R5, main.fact-504(SP)
+	0x01e8 00488 (/Users/jan/Development/go_asm_module/main.go:32)	STP	(ZR, ZR), main..autotmp_114-160(SP)
+	0x01ec 00492 (/Users/jan/Development/go_asm_module/main.go:32)	STP	(ZR, ZR), main..autotmp_114-144(SP)
+	0x01f0 00496 (/Users/jan/Development/go_asm_module/main.go:32)	MOVD	$6, R0
+	0x01f4 00500 (/Users/jan/Development/go_asm_module/main.go:32)	PCDATA	$1, $3
+	0x01f4 00500 (/Users/jan/Development/go_asm_module/main.go:32)	CALL	runtime.convT64(SB)
+	0x01f8 00504 (/Users/jan/Development/go_asm_module/main.go:32)	MOVD	$type:int64(SB), R5
+	0x0200 00512 (/Users/jan/Development/go_asm_module/main.go:32)	MOVD	R5, main..autotmp_114-160(SP)
+	0x0204 00516 (/Users/jan/Development/go_asm_module/main.go:32)	MOVD	R0, main..autotmp_114-152(SP)
+	0x0208 00520 (/Users/jan/Development/go_asm_module/main.go:32)	MOVD	main.fact-504(SP), R0
+	0x020c 00524 (/Users/jan/Development/go_asm_module/main.go:32)	CALL	runtime.convT64(SB)
+	0x0210 00528 (/Users/jan/Development/go_asm_module/main.go:32)	MOVD	$type:int64(SB), R5
+	0x0218 00536 (/Users/jan/Development/go_asm_module/main.go:32)	MOVD	R5, main..autotmp_114-144(SP)
+	0x021c 00540 (/Users/jan/Development/go_asm_module/main.go:32)	MOVD	R0, main..autotmp_114-136(SP)
+	0x0220 00544 (/Users/jan/Development/go_asm_module/main.go:32)	PCDATA	$0, $-4
+	0x0220 00544 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x0228 00552 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x0228 00552 (<unknown line number>)	NOP
+	0x0228 00552 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x0230 00560 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."Factorial: %d! = %d\n"(SB), R2
+	0x0238 00568 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$20, R3
+	0x023c 00572 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_114-160(SP), R4
+	0x0240 00576 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$2, R5
+	0x0244 00580 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x0248 00584 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $0
+	0x0248 00584 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x024c 00588 (/Users/jan/Development/go_asm_module/main.go:37)	MOVD	$type:uint8(SB), R0
+	0x0254 00596 (/Users/jan/Development/go_asm_module/main.go:37)	MOVD	$23, R1
+	0x0258 00600 (/Users/jan/Development/go_asm_module/main.go:37)	MOVD	$22, R2
+	0x025c 00604 (/Users/jan/Development/go_asm_module/main.go:37)	MOVD	$go:string."Hello, ARM64 Assembly!"(SB), R3
+	0x0264 00612 (/Users/jan/Development/go_asm_module/main.go:37)	CALL	runtime.makeslicecopy(SB)
+	0x0268 00616 (/Users/jan/Development/go_asm_module/main.go:39)	MOVB	ZR, 22(R0)
+	0x026c 00620 (/Users/jan/Development/go_asm_module/main.go:41)	MOVD	R0, main..autotmp_94-480(SP)
+	0x0270 00624 (/Users/jan/Development/go_asm_module/main.go:41)	MOVD	R0, 8(RSP)
+	0x0274 00628 (/Users/jan/Development/go_asm_module/main.go:41)	PCDATA	$1, $4
+	0x0274 00628 (/Users/jan/Development/go_asm_module/main.go:41)	CALL	main.strlen_asm(SB)
+	0x0278 00632 (/Users/jan/Development/go_asm_module/main.go:41)	MOVD	16(RSP), R5
+	0x027c 00636 (/Users/jan/Development/go_asm_module/main.go:41)	MOVD	R5, main.strLen-528(SP)
+	0x0280 00640 (/Users/jan/Development/go_asm_module/main.go:42)	STP	(ZR, ZR), main..autotmp_118-192(SP)
+	0x0284 00644 (/Users/jan/Development/go_asm_module/main.go:42)	STP	(ZR, ZR), main..autotmp_118-176(SP)
+	0x0288 00648 (/Users/jan/Development/go_asm_module/main.go:42)	MOVD	$go:string."Hello, ARM64 Assembly!"(SB), R0
+	0x0290 00656 (/Users/jan/Development/go_asm_module/main.go:42)	MOVD	$22, R1
+	0x0294 00660 (/Users/jan/Development/go_asm_module/main.go:42)	PCDATA	$1, $5
+	0x0294 00660 (/Users/jan/Development/go_asm_module/main.go:42)	CALL	runtime.convTstring(SB)
+	0x0298 00664 (/Users/jan/Development/go_asm_module/main.go:42)	MOVD	$type:string(SB), R5
+	0x02a0 00672 (/Users/jan/Development/go_asm_module/main.go:42)	MOVD	R5, main..autotmp_118-192(SP)
+	0x02a4 00676 (/Users/jan/Development/go_asm_module/main.go:42)	MOVD	R0, main..autotmp_118-184(SP)
+	0x02a8 00680 (/Users/jan/Development/go_asm_module/main.go:42)	MOVD	main.strLen-528(SP), R0
+	0x02ac 00684 (/Users/jan/Development/go_asm_module/main.go:42)	CALL	runtime.convT64(SB)
+	0x02b0 00688 (/Users/jan/Development/go_asm_module/main.go:42)	MOVD	$type:int64(SB), R5
+	0x02b8 00696 (/Users/jan/Development/go_asm_module/main.go:42)	MOVD	R5, main..autotmp_118-176(SP)
+	0x02bc 00700 (/Users/jan/Development/go_asm_module/main.go:42)	MOVD	R0, main..autotmp_118-168(SP)
+	0x02c0 00704 (/Users/jan/Development/go_asm_module/main.go:42)	PCDATA	$0, $-3
+	0x02c0 00704 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x02c8 00712 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x02c8 00712 (<unknown line number>)	NOP
+	0x02c8 00712 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x02d0 00720 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."String length of '%s': %d\n"(SB), R2
+	0x02d8 00728 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$26, R3
+	0x02dc 00732 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_118-192(SP), R4
+	0x02e0 00736 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$2, R5
+	0x02e4 00740 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x02e8 00744 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $0
+	0x02e8 00744 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x02ec 00748 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$type:[10]int64(SB), R0
+	0x02f4 00756 (/Users/jan/Development/go_asm_module/main.go:45)	CALL	runtime.newobject(SB)
+	0x02f8 00760 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R0, main..autotmp_218-472(SP)
+	0x02fc 00764 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$1, R5
+	0x0300 00768 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R5, (R0)
+	0x0304 00772 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$2, R5
+	0x0308 00776 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R5, 8(R0)
+	0x030c 00780 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$3, R5
+	0x0310 00784 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R5, 16(R0)
+	0x0314 00788 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$4, R5
+	0x0318 00792 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R5, 24(R0)
+	0x031c 00796 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$5, R5
+	0x0320 00800 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R5, 32(R0)
+	0x0324 00804 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$6, R5
+	0x0328 00808 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R5, 40(R0)
+	0x032c 00812 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$7, R5
+	0x0330 00816 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R5, 48(R0)
+	0x0334 00820 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$8, R5
+	0x0338 00824 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R5, 56(R0)
+	0x033c 00828 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$9, R5
+	0x0340 00832 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R5, 64(R0)
+	0x0344 00836 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	$10, R5
+	0x0348 00840 (/Users/jan/Development/go_asm_module/main.go:45)	MOVD	R5, 72(R0)
+	0x034c 00844 (/Users/jan/Development/go_asm_module/main.go:46)	MOVD	R0, main..autotmp_95-488(SP)
+	0x0350 00848 (/Users/jan/Development/go_asm_module/main.go:46)	MOVD	main..autotmp_95-488(SP), R5
+	0x0354 00852 (/Users/jan/Development/go_asm_module/main.go:46)	MOVD	R5, 8(RSP)
+	0x0358 00856 (/Users/jan/Development/go_asm_module/main.go:46)	MOVD	$10, R5
+	0x035c 00860 (/Users/jan/Development/go_asm_module/main.go:46)	MOVD	R5, 16(RSP)
+	0x0360 00864 (/Users/jan/Development/go_asm_module/main.go:46)	PCDATA	$1, $6
+	0x0360 00864 (/Users/jan/Development/go_asm_module/main.go:46)	CALL	main.sum_array_asm(SB)
+	0x0364 00868 (/Users/jan/Development/go_asm_module/main.go:46)	MOVD	24(RSP), R5
+	0x0368 00872 (/Users/jan/Development/go_asm_module/main.go:46)	MOVD	R5, main.arraySum-496(SP)
+	0x036c 00876 (/Users/jan/Development/go_asm_module/main.go:47)	STP	(ZR, ZR), main..autotmp_123-224(SP)
+	0x0370 00880 (/Users/jan/Development/go_asm_module/main.go:47)	STP	(ZR, ZR), main..autotmp_123-208(SP)
+	0x0374 00884 (/Users/jan/Development/go_asm_module/main.go:47)	MOVD	main..autotmp_218-472(SP), R0
+	0x0378 00888 (/Users/jan/Development/go_asm_module/main.go:47)	MOVD	$10, R1
+	0x037c 00892 (/Users/jan/Development/go_asm_module/main.go:47)	MOVD	R1, R2
+	0x0380 00896 (/Users/jan/Development/go_asm_module/main.go:47)	PCDATA	$1, $7
+	0x0380 00896 (/Users/jan/Development/go_asm_module/main.go:47)	CALL	runtime.convTslice(SB)
+	0x0384 00900 (/Users/jan/Development/go_asm_module/main.go:47)	MOVD	$type:[]int64(SB), R5
+	0x038c 00908 (/Users/jan/Development/go_asm_module/main.go:47)	MOVD	R5, main..autotmp_123-224(SP)
+	0x0390 00912 (/Users/jan/Development/go_asm_module/main.go:47)	MOVD	R0, main..autotmp_123-216(SP)
+	0x0394 00916 (/Users/jan/Development/go_asm_module/main.go:47)	MOVD	main.arraySum-496(SP), R0
+	0x0398 00920 (/Users/jan/Development/go_asm_module/main.go:47)	CALL	runtime.convT64(SB)
+	0x039c 00924 (/Users/jan/Development/go_asm_module/main.go:47)	MOVD	$type:int64(SB), R5
+	0x03a4 00932 (/Users/jan/Development/go_asm_module/main.go:47)	MOVD	R5, main..autotmp_123-208(SP)
+	0x03a8 00936 (/Users/jan/Development/go_asm_module/main.go:47)	MOVD	R0, main..autotmp_123-200(SP)
+	0x03ac 00940 (/Users/jan/Development/go_asm_module/main.go:47)	PCDATA	$0, $-4
+	0x03ac 00940 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x03b4 00948 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x03b4 00948 (<unknown line number>)	NOP
+	0x03b4 00948 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x03bc 00956 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."Sum of array %v: %d\n"(SB), R2
+	0x03c4 00964 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$20, R3
+	0x03c8 00968 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_123-224(SP), R4
+	0x03cc 00972 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$2, R5
+	0x03d0 00976 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x03d4 00980 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $8
+	0x03d4 00980 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x03d8 00984 (/Users/jan/Development/go_asm_module/main.go:50)	MOVD	$type:string(SB), R5
+	0x03e0 00992 (/Users/jan/Development/go_asm_module/main.go:50)	MOVD	R5, main..autotmp_127-240(SP)
+	0x03e4 00996 (/Users/jan/Development/go_asm_module/main.go:50)	MOVD	$main..stmp_8(SB), R5
+	0x03ec 01004 (/Users/jan/Development/go_asm_module/main.go:50)	MOVD	R5, main..autotmp_127-232(SP)
+	0x03f0 01008 (/Users/jan/Development/go_asm_module/main.go:50)	PCDATA	$0, $-3
+	0x03f0 01008 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	os.Stdout(SB), R1
+	0x03f8 01016 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	PCDATA	$0, $-1
+	0x03f8 01016 (<unknown line number>)	NOP
+	0x03f8 01016 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x0400 01024 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$main..autotmp_127-240(SP), R2
+	0x0404 01028 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$1, R3
+	0x0408 01032 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	R3, R4
+	0x040c 01036 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	CALL	fmt.Fprintln(SB)
+	0x0410 01040 (/Users/jan/Development/go_asm_module/main.go:51)	STP	(ZR, ZR), main..autotmp_129-304(SP)
+	0x0414 01044 (/Users/jan/Development/go_asm_module/main.go:51)	STP	(ZR, ZR), main..autotmp_129-288(SP)
+	0x0418 01048 (/Users/jan/Development/go_asm_module/main.go:51)	STP	(ZR, ZR), main..autotmp_129-272(SP)
+	0x041c 01052 (/Users/jan/Development/go_asm_module/main.go:51)	STP	(ZR, ZR), main..autotmp_129-256(SP)
+	0x0420 01056 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	$15, R0
+	0x0424 01060 (/Users/jan/Development/go_asm_module/main.go:51)	PCDATA	$1, $9
+	0x0424 01060 (/Users/jan/Development/go_asm_module/main.go:51)	CALL	runtime.convT64(SB)
+	0x0428 01064 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	$type:int64(SB), R5
+	0x0430 01072 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	R5, main..autotmp_129-304(SP)
+	0x0434 01076 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	R0, main..autotmp_129-296(SP)
+	0x0438 01080 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	$27, R0
+	0x043c 01084 (/Users/jan/Development/go_asm_module/main.go:51)	CALL	runtime.convT64(SB)
+	0x0440 01088 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	$type:int64(SB), R5
+	0x0448 01096 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	R5, main..autotmp_129-288(SP)
+	0x044c 01100 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	R0, main..autotmp_129-280(SP)
+	0x0450 01104 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	$42, R0
+	0x0454 01108 (/Users/jan/Development/go_asm_module/main.go:51)	CALL	runtime.convT64(SB)
+	0x0458 01112 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	$type:int64(SB), R5
+	0x0460 01120 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	R5, main..autotmp_129-272(SP)
+	0x0464 01124 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	R0, main..autotmp_129-264(SP)
+	0x0468 01128 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	main.sum-536(SP), R0
+	0x046c 01132 (/Users/jan/Development/go_asm_module/main.go:51)	CALL	runtime.convT64(SB)
+	0x0470 01136 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	$type:int64(SB), R5
+	0x0478 01144 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	R5, main..autotmp_129-256(SP)
+	0x047c 01148 (/Users/jan/Development/go_asm_module/main.go:51)	MOVD	R0, main..autotmp_129-248(SP)
+	0x0480 01152 (/Users/jan/Development/go_asm_module/main.go:51)	PCDATA	$0, $-4
+	0x0480 01152 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x0488 01160 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x0488 01160 (<unknown line number>)	NOP
+	0x0488 01160 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x0490 01168 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."Go addition: %d + %d = %d (ASM: %d)\n"(SB), R2
+	0x0498 01176 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$36, R3
+	0x049c 01180 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_129-304(SP), R4
+	0x04a0 01184 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$4, R5
+	0x04a4 01188 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x04a8 01192 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $8
+	0x04a8 01192 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x04ac 01196 (/Users/jan/Development/go_asm_module/main.go:52)	STP	(ZR, ZR), main..autotmp_135-368(SP)
+	0x04b0 01200 (/Users/jan/Development/go_asm_module/main.go:52)	STP	(ZR, ZR), main..autotmp_135-352(SP)
+	0x04b4 01204 (/Users/jan/Development/go_asm_module/main.go:52)	STP	(ZR, ZR), main..autotmp_135-336(SP)
+	0x04b8 01208 (/Users/jan/Development/go_asm_module/main.go:52)	STP	(ZR, ZR), main..autotmp_135-320(SP)
+	0x04bc 01212 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	$8, R0
+	0x04c0 01216 (/Users/jan/Development/go_asm_module/main.go:52)	PCDATA	$1, $10
+	0x04c0 01216 (/Users/jan/Development/go_asm_module/main.go:52)	CALL	runtime.convT64(SB)
+	0x04c4 01220 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	$type:int64(SB), R5
+	0x04cc 01228 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	R5, main..autotmp_135-368(SP)
+	0x04d0 01232 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	R0, main..autotmp_135-360(SP)
+	0x04d4 01236 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	$9, R0
+	0x04d8 01240 (/Users/jan/Development/go_asm_module/main.go:52)	CALL	runtime.convT64(SB)
+	0x04dc 01244 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	$type:int64(SB), R5
+	0x04e4 01252 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	R5, main..autotmp_135-352(SP)
+	0x04e8 01256 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	R0, main..autotmp_135-344(SP)
+	0x04ec 01260 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	$72, R0
+	0x04f0 01264 (/Users/jan/Development/go_asm_module/main.go:52)	CALL	runtime.convT64(SB)
+	0x04f4 01268 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	$type:int64(SB), R5
+	0x04fc 01276 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	R5, main..autotmp_135-336(SP)
+	0x0500 01280 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	R0, main..autotmp_135-328(SP)
+	0x0504 01284 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	main.product-520(SP), R0
+	0x0508 01288 (/Users/jan/Development/go_asm_module/main.go:52)	CALL	runtime.convT64(SB)
+	0x050c 01292 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	$type:int64(SB), R5
+	0x0514 01300 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	R5, main..autotmp_135-320(SP)
+	0x0518 01304 (/Users/jan/Development/go_asm_module/main.go:52)	MOVD	R0, main..autotmp_135-312(SP)
+	0x051c 01308 (/Users/jan/Development/go_asm_module/main.go:52)	PCDATA	$0, $-3
+	0x051c 01308 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x0524 01316 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x0524 01316 (<unknown line number>)	NOP
+	0x0524 01316 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x052c 01324 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."Go multiplication: %d * %d = %d (ASM: %d)\n"(SB), R2
+	0x0534 01332 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$42, R3
+	0x0538 01336 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_135-368(SP), R4
+	0x053c 01340 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$4, R5
+	0x0540 01344 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x0544 01348 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $8
+	0x0544 01348 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x0548 01352 (<unknown line number>)	NOP
+	0x0548 01352 (/Users/jan/Development/go_asm_module/main.go:54)	MOVD	$2, R0
+	0x054c 01356 (/Users/jan/Development/go_asm_module/main.go:54)	MOVD	$1, R1
+	0x0550 01360 (/Users/jan/Development/go_asm_module/main.go:71)	JMP	1376
+	0x0554 01364 (/Users/jan/Development/go_asm_module/main.go:75)	ADD	$1, R0, R2
+	0x0558 01368 (/Users/jan/Development/go_asm_module/main.go:76)	MUL	R0, R1, R1
+	0x055c 01372 (/Users/jan/Development/go_asm_module/main.go:75)	MOVD	R2, R0
+	0x0560 01376 (/Users/jan/Development/go_asm_module/main.go:75)	CMP	$6, R0
+	0x0564 01380 (/Users/jan/Development/go_asm_module/main.go:75)	BLE	1364
+	0x0568 01384 (/Users/jan/Development/go_asm_module/main.go:54)	MOVD	R1, main.goFact-512(SP)
+	0x056c 01388 (/Users/jan/Development/go_asm_module/main.go:55)	STP	(ZR, ZR), main..autotmp_141-416(SP)
+	0x0570 01392 (/Users/jan/Development/go_asm_module/main.go:55)	STP	(ZR, ZR), main..autotmp_141-400(SP)
+	0x0574 01396 (/Users/jan/Development/go_asm_module/main.go:55)	STP	(ZR, ZR), main..autotmp_141-384(SP)
+	0x0578 01400 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	$6, R0
+	0x057c 01404 (/Users/jan/Development/go_asm_module/main.go:55)	PCDATA	$1, $11
+	0x057c 01404 (/Users/jan/Development/go_asm_module/main.go:55)	CALL	runtime.convT64(SB)
+	0x0580 01408 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	$type:int64(SB), R1
+	0x0588 01416 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	R1, main..autotmp_141-416(SP)
+	0x058c 01420 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	R0, main..autotmp_141-408(SP)
+	0x0590 01424 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	main.goFact-512(SP), R0
+	0x0594 01428 (/Users/jan/Development/go_asm_module/main.go:55)	CALL	runtime.convT64(SB)
+	0x0598 01432 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	$type:int64(SB), R1
+	0x05a0 01440 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	R1, main..autotmp_141-400(SP)
+	0x05a4 01444 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	R0, main..autotmp_141-392(SP)
+	0x05a8 01448 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	main.fact-504(SP), R0
+	0x05ac 01452 (/Users/jan/Development/go_asm_module/main.go:55)	CALL	runtime.convT64(SB)
+	0x05b0 01456 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	$type:int64(SB), R1
+	0x05b8 01464 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	R1, main..autotmp_141-384(SP)
+	0x05bc 01468 (/Users/jan/Development/go_asm_module/main.go:55)	MOVD	R0, main..autotmp_141-376(SP)
+	0x05c0 01472 (/Users/jan/Development/go_asm_module/main.go:55)	PCDATA	$0, $-4
+	0x05c0 01472 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x05c8 01480 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x05c8 01480 (<unknown line number>)	NOP
+	0x05c8 01480 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x05d0 01488 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."Go factorial: %d! = %d (ASM: %d)\n"(SB), R2
+	0x05d8 01496 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$33, R3
+	0x05dc 01500 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_141-416(SP), R4
+	0x05e0 01504 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$3, R5
+	0x05e4 01508 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x05e8 01512 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $8
+	0x05e8 01512 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x05ec 01516 (/Users/jan/Development/go_asm_module/main.go:58)	MOVD	main..autotmp_218-472(SP), R1
+	0x05f0 01520 (/Users/jan/Development/go_asm_module/main.go:58)	MOVD	ZR, R0
+	0x05f4 01524 (/Users/jan/Development/go_asm_module/main.go:58)	MOVD	ZR, R2
+	0x05f8 01528 (/Users/jan/Development/go_asm_module/main.go:58)	JMP	1544
+	0x05fc 01532 (/Users/jan/Development/go_asm_module/main.go:58)	MOVD	(R1)(R0<<3), R3
+	0x0600 01536 (/Users/jan/Development/go_asm_module/main.go:58)	ADD	$1, R0, R0
+	0x0604 01540 (/Users/jan/Development/go_asm_module/main.go:59)	ADD	R3, R2, R2
+	0x0608 01544 (/Users/jan/Development/go_asm_module/main.go:58)	CMP	$10, R0
+	0x060c 01548 (/Users/jan/Development/go_asm_module/main.go:58)	BLT	1532
+	0x0610 01552 (/Users/jan/Development/go_asm_module/main.go:61)	STP	(ZR, ZR), main..autotmp_148-448(SP)
+	0x0614 01556 (/Users/jan/Development/go_asm_module/main.go:61)	STP	(ZR, ZR), main..autotmp_148-432(SP)
+	0x0618 01560 (/Users/jan/Development/go_asm_module/main.go:61)	MOVD	R2, R0
+	0x061c 01564 (/Users/jan/Development/go_asm_module/main.go:61)	PCDATA	$1, $12
+	0x061c 01564 (/Users/jan/Development/go_asm_module/main.go:61)	CALL	runtime.convT64(SB)
+	0x0620 01568 (/Users/jan/Development/go_asm_module/main.go:61)	MOVD	$type:int64(SB), R1
+	0x0628 01576 (/Users/jan/Development/go_asm_module/main.go:61)	MOVD	R1, main..autotmp_148-448(SP)
+	0x062c 01580 (/Users/jan/Development/go_asm_module/main.go:61)	MOVD	R0, main..autotmp_148-440(SP)
+	0x0630 01584 (/Users/jan/Development/go_asm_module/main.go:61)	MOVD	main.arraySum-496(SP), R0
+	0x0634 01588 (/Users/jan/Development/go_asm_module/main.go:61)	CALL	runtime.convT64(SB)
+	0x0638 01592 (/Users/jan/Development/go_asm_module/main.go:61)	MOVD	$type:int64(SB), R1
+	0x0640 01600 (/Users/jan/Development/go_asm_module/main.go:61)	MOVD	R1, main..autotmp_148-432(SP)
+	0x0644 01604 (/Users/jan/Development/go_asm_module/main.go:61)	MOVD	R0, main..autotmp_148-424(SP)
+	0x0648 01608 (/Users/jan/Development/go_asm_module/main.go:61)	PCDATA	$0, $-3
+	0x0648 01608 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	os.Stdout(SB), R1
+	0x0650 01616 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$0, $-1
+	0x0650 01616 (<unknown line number>)	NOP
+	0x0650 01616 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x0658 01624 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$go:string."Go array sum: %d (ASM: %d)\n"(SB), R2
+	0x0660 01632 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$27, R3
+	0x0664 01636 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$main..autotmp_148-448(SP), R4
+	0x0668 01640 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	$2, R5
+	0x066c 01644 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	MOVD	R5, R6
+	0x0670 01648 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	PCDATA	$1, $0
+	0x0670 01648 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:233)	CALL	fmt.Fprintf(SB)
+	0x0674 01652 (/Users/jan/Development/go_asm_module/main.go:64)	CALL	main.runBenchmarks(SB)
+	0x0678 01656 (/Users/jan/Development/go_asm_module/main.go:66)	MOVD	$type:string(SB), R1
+	0x0680 01664 (/Users/jan/Development/go_asm_module/main.go:66)	MOVD	R1, main..autotmp_152-464(SP)
+	0x0684 01668 (/Users/jan/Development/go_asm_module/main.go:66)	MOVD	$main..stmp_9(SB), R1
+	0x068c 01676 (/Users/jan/Development/go_asm_module/main.go:66)	MOVD	R1, main..autotmp_152-456(SP)
+	0x0690 01680 (/Users/jan/Development/go_asm_module/main.go:66)	PCDATA	$0, $-4
+	0x0690 01680 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	os.Stdout(SB), R1
+	0x0698 01688 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	PCDATA	$0, $-1
+	0x0698 01688 (<unknown line number>)	NOP
+	0x0698 01688 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$go:itab.*os.File,io.Writer(SB), R0
+	0x06a0 01696 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$main..autotmp_152-464(SP), R2
+	0x06a4 01700 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	$1, R3
+	0x06a8 01704 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	MOVD	R3, R4
+	0x06ac 01708 (/opt/homebrew/Cellar/go/1.24.2/libexec/src/fmt/print.go:314)	CALL	fmt.Fprintln(SB)
+	0x06b0 01712 (/Users/jan/Development/go_asm_module/main.go:67)	LDP	-8(RSP), (R29, R30)
+	0x06b4 01716 (/Users/jan/Development/go_asm_module/main.go:67)	ADD	$608, RSP
+	0x06b8 01720 (/Users/jan/Development/go_asm_module/main.go:67)	RET	(R30)
+	0x06bc 01724 (/Users/jan/Development/go_asm_module/main.go:67)	NOP
+	0x06bc 01724 (/Users/jan/Development/go_asm_module/main.go:15)	PCDATA	$1, $-1
+	0x06bc 01724 (/Users/jan/Development/go_asm_module/main.go:15)	PCDATA	$0, $-2
+	0x06bc 01724 (/Users/jan/Development/go_asm_module/main.go:15)	MOVD	R30, R3
+	0x06c0 01728 (/Users/jan/Development/go_asm_module/main.go:15)	CALL	runtime.morestack_noctxt(SB)
+	0x06c4 01732 (/Users/jan/Development/go_asm_module/main.go:15)	PCDATA	$0, $-1
+	0x06c4 01732 (/Users/jan/Development/go_asm_module/main.go:15)	JMP	0
+	0x0000 90 0b 40 f9 f1 83 07 d1 3f 02 10 eb 89 35 00 54  ..@.....?....5.T
+	0x0010 f4 83 09 d1 9d fa 3f a9 9f 02 00 91 fd 23 00 d1  ......?......#..
+	0x0020 05 00 00 90 a5 00 00 91 e5 27 01 f9 05 00 00 90  .........'......
+	0x0030 a5 00 00 91 e5 2b 01 f9 1b 00 00 90 61 03 40 f9  .....+......a.@.
+	0x0040 00 00 00 90 00 00 00 91 e2 23 09 91 e3 03 40 b2  .........#....@.
+	0x0050 e4 03 03 aa 00 00 00 94 05 00 00 90 a5 00 00 91  ................
+	0x0060 e5 1f 01 f9 05 00 00 90 a5 00 00 91 e5 23 01 f9  .............#..
+	0x0070 1b 00 00 90 61 03 40 f9 00 00 00 90 00 00 00 91  ....a.@.........
+	0x0080 e2 e3 08 91 e3 03 40 b2 e4 03 03 aa 00 00 00 94  ......@.........
+	0x0090 e5 0f 40 b2 e5 07 00 f9 65 03 80 d2 e5 0b 00 f9  ..@.....e.......
+	0x00a0 00 00 00 94 e5 0f 40 f9 e5 23 00 f9 fb 23 08 91  ......@..#...#..
+	0x00b0 7f 7f 00 a9 fb 63 08 91 7f 7f 00 a9 fb a3 08 91  .....c..........
+	0x00c0 7f 7f 00 a9 e0 0f 40 b2 00 00 00 94 05 00 00 90  ......@.........
+	0x00d0 a5 00 00 91 e5 07 01 f9 e0 0b 01 f9 60 03 80 d2  ............`...
+	0x00e0 00 00 00 94 05 00 00 90 a5 00 00 91 e5 0f 01 f9  ................
+	0x00f0 e0 13 01 f9 e0 23 40 f9 00 00 00 94 05 00 00 90  .....#@.........
+	0x0100 a5 00 00 91 e5 17 01 f9 e0 1b 01 f9 1b 00 00 90  ................
+	0x0110 61 03 40 f9 00 00 00 90 00 00 00 91 02 00 00 90  a.@.............
+	0x0120 42 00 00 91 e3 02 80 d2 e4 23 08 91 e5 07 40 b2  B........#....@.
+	0x0130 e6 03 05 aa 00 00 00 94 e5 03 7d b2 e5 07 00 f9  ..........}.....
+	0x0140 25 01 80 d2 e5 0b 00 f9 00 00 00 94 e5 0f 40 f9  %.............@.
+	0x0150 e5 2b 00 f9 ff ff 1d a9 ff ff 1e a9 ff ff 1f a9  .+..............
+	0x0160 e0 03 7d b2 00 00 00 94 05 00 00 90 a5 00 00 91  ..}.............
+	0x0170 e5 ef 00 f9 e0 f3 00 f9 20 01 80 d2 00 00 00 94  ........ .......
+	0x0180 05 00 00 90 a5 00 00 91 e5 f7 00 f9 e0 fb 00 f9  ................
+	0x0190 e0 2b 40 f9 00 00 00 94 05 00 00 90 a5 00 00 91  .+@.............
+	0x01a0 e5 ff 00 f9 e0 03 01 f9 1b 00 00 90 61 03 40 f9  ............a.@.
+	0x01b0 00 00 00 90 00 00 00 91 02 00 00 90 42 00 00 91  ............B...
+	0x01c0 a3 03 80 d2 e4 63 07 91 e5 07 40 b2 e6 03 05 aa  .....c....@.....
+	0x01d0 00 00 00 94 e5 07 7f b2 e5 07 00 f9 00 00 00 94  ................
+	0x01e0 e5 0b 40 f9 e5 33 00 f9 ff ff 1b a9 ff ff 1c a9  ..@..3..........
+	0x01f0 e0 07 7f b2 00 00 00 94 05 00 00 90 a5 00 00 91  ................
+	0x0200 e5 df 00 f9 e0 e3 00 f9 e0 33 40 f9 00 00 00 94  .........3@.....
+	0x0210 05 00 00 90 a5 00 00 91 e5 e7 00 f9 e0 eb 00 f9  ................
+	0x0220 1b 00 00 90 61 03 40 f9 00 00 00 90 00 00 00 91  ....a.@.........
+	0x0230 02 00 00 90 42 00 00 91 83 02 80 d2 e4 e3 06 91  ....B...........
+	0x0240 e5 03 7f b2 e6 03 05 aa 00 00 00 94 00 00 00 90  ................
+	0x0250 00 00 00 91 e1 02 80 d2 c2 02 80 d2 03 00 00 90  ................
+	0x0260 63 00 00 91 00 00 00 94 1f 58 00 39 e0 3f 00 f9  c........X.9.?..
+	0x0270 e0 07 00 f9 00 00 00 94 e5 0b 40 f9 e5 27 00 f9  ..........@..'..
+	0x0280 ff ff 19 a9 ff ff 1a a9 00 00 00 90 00 00 00 91  ................
+	0x0290 c1 02 80 d2 00 00 00 94 05 00 00 90 a5 00 00 91  ................
+	0x02a0 e5 cf 00 f9 e0 d3 00 f9 e0 27 40 f9 00 00 00 94  .........'@.....
+	0x02b0 05 00 00 90 a5 00 00 91 e5 d7 00 f9 e0 db 00 f9  ................
+	0x02c0 1b 00 00 90 61 03 40 f9 00 00 00 90 00 00 00 91  ....a.@.........
+	0x02d0 02 00 00 90 42 00 00 91 43 03 80 d2 e4 63 06 91  ....B...C....c..
+	0x02e0 e5 03 7f b2 e6 03 05 aa 00 00 00 94 00 00 00 90  ................
+	0x02f0 00 00 00 91 00 00 00 94 e0 43 00 f9 e5 03 40 b2  .........C....@.
+	0x0300 05 00 00 f9 e5 03 7f b2 05 04 00 f9 e5 07 40 b2  ..............@.
+	0x0310 05 08 00 f9 e5 03 7e b2 05 0c 00 f9 a5 00 80 d2  ......~.........
+	0x0320 05 10 00 f9 e5 07 7f b2 05 14 00 f9 e5 0b 40 b2  ..............@.
+	0x0330 05 18 00 f9 e5 03 7d b2 05 1c 00 f9 25 01 80 d2  ......}.....%...
+	0x0340 05 20 00 f9 45 01 80 d2 05 24 00 f9 e0 3b 00 f9  . ..E....$...;..
+	0x0350 e5 3b 40 f9 e5 07 00 f9 45 01 80 d2 e5 0b 00 f9  .;@.....E.......
+	0x0360 00 00 00 94 e5 0f 40 f9 e5 37 00 f9 ff ff 17 a9  ......@..7......
+	0x0370 ff ff 18 a9 e0 43 40 f9 41 01 80 d2 e2 03 01 aa  .....C@.A.......
+	0x0380 00 00 00 94 05 00 00 90 a5 00 00 91 e5 bf 00 f9  ................
+	0x0390 e0 c3 00 f9 e0 37 40 f9 00 00 00 94 05 00 00 90  .....7@.........
+	0x03a0 a5 00 00 91 e5 c7 00 f9 e0 cb 00 f9 1b 00 00 90  ................
+	0x03b0 61 03 40 f9 00 00 00 90 00 00 00 91 02 00 00 90  a.@.............
+	0x03c0 42 00 00 91 83 02 80 d2 e4 e3 05 91 e5 03 7f b2  B...............
+	0x03d0 e6 03 05 aa 00 00 00 94 05 00 00 90 a5 00 00 91  ................
+	0x03e0 e5 b7 00 f9 05 00 00 90 a5 00 00 91 e5 bb 00 f9  ................
+	0x03f0 1b 00 00 90 61 03 40 f9 00 00 00 90 00 00 00 91  ....a.@.........
+	0x0400 e2 a3 05 91 e3 03 40 b2 e4 03 03 aa 00 00 00 94  ......@.........
+	0x0410 ff ff 12 a9 ff ff 13 a9 ff ff 14 a9 ff ff 15 a9  ................
+	0x0420 e0 0f 40 b2 00 00 00 94 05 00 00 90 a5 00 00 91  ..@.............
+	0x0430 e5 97 00 f9 e0 9b 00 f9 60 03 80 d2 00 00 00 94  ........`.......
+	0x0440 05 00 00 90 a5 00 00 91 e5 9f 00 f9 e0 a3 00 f9  ................
+	0x0450 40 05 80 d2 00 00 00 94 05 00 00 90 a5 00 00 91  @...............
+	0x0460 e5 a7 00 f9 e0 ab 00 f9 e0 23 40 f9 00 00 00 94  .........#@.....
+	0x0470 05 00 00 90 a5 00 00 91 e5 af 00 f9 e0 b3 00 f9  ................
+	0x0480 1b 00 00 90 61 03 40 f9 00 00 00 90 00 00 00 91  ....a.@.........
+	0x0490 02 00 00 90 42 00 00 91 83 04 80 d2 e4 a3 04 91  ....B...........
+	0x04a0 e5 03 7e b2 e6 03 05 aa 00 00 00 94 ff ff 0e a9  ..~.............
+	0x04b0 ff ff 0f a9 ff ff 10 a9 ff ff 11 a9 e0 03 7d b2  ..............}.
+	0x04c0 00 00 00 94 05 00 00 90 a5 00 00 91 e5 77 00 f9  .............w..
+	0x04d0 e0 7b 00 f9 20 01 80 d2 00 00 00 94 05 00 00 90  .{.. ...........
+	0x04e0 a5 00 00 91 e5 7f 00 f9 e0 83 00 f9 00 09 80 d2  ................
+	0x04f0 00 00 00 94 05 00 00 90 a5 00 00 91 e5 87 00 f9  ................
+	0x0500 e0 8b 00 f9 e0 2b 40 f9 00 00 00 94 05 00 00 90  .....+@.........
+	0x0510 a5 00 00 91 e5 8f 00 f9 e0 93 00 f9 1b 00 00 90  ................
+	0x0520 61 03 40 f9 00 00 00 90 00 00 00 91 02 00 00 90  a.@.............
+	0x0530 42 00 00 91 43 05 80 d2 e4 a3 03 91 e5 03 7e b2  B...C.........~.
+	0x0540 e6 03 05 aa 00 00 00 94 e0 03 7f b2 e1 03 40 b2  ..............@.
+	0x0550 04 00 00 14 02 04 00 91 21 7c 00 9b e0 03 02 aa  ........!|......
+	0x0560 1f 18 00 f1 8d ff ff 54 e1 2f 00 f9 ff ff 0b a9  .......T./......
+	0x0570 ff ff 0c a9 ff ff 0d a9 e0 07 7f b2 00 00 00 94  ................
+	0x0580 01 00 00 90 21 00 00 91 e1 5f 00 f9 e0 63 00 f9  ....!...._...c..
+	0x0590 e0 2f 40 f9 00 00 00 94 01 00 00 90 21 00 00 91  ./@.........!...
+	0x05a0 e1 67 00 f9 e0 6b 00 f9 e0 33 40 f9 00 00 00 94  .g...k...3@.....
+	0x05b0 01 00 00 90 21 00 00 91 e1 6f 00 f9 e0 73 00 f9  ....!....o...s..
+	0x05c0 1b 00 00 90 61 03 40 f9 00 00 00 90 00 00 00 91  ....a.@.........
+	0x05d0 02 00 00 90 42 00 00 91 23 04 80 d2 e4 e3 02 91  ....B...#.......
+	0x05e0 e5 07 40 b2 e6 03 05 aa 00 00 00 94 e1 43 40 f9  ..@..........C@.
+	0x05f0 e0 03 1f aa e2 03 1f aa 04 00 00 14 23 78 60 f8  ............#x`.
+	0x0600 00 04 00 91 42 00 03 8b 1f 28 00 f1 8b ff ff 54  ....B....(.....T
+	0x0610 ff ff 09 a9 ff ff 0a a9 e0 03 02 aa 00 00 00 94  ................
+	0x0620 01 00 00 90 21 00 00 91 e1 4f 00 f9 e0 53 00 f9  ....!....O...S..
+	0x0630 e0 37 40 f9 00 00 00 94 01 00 00 90 21 00 00 91  .7@.........!...
+	0x0640 e1 57 00 f9 e0 5b 00 f9 1b 00 00 90 61 03 40 f9  .W...[......a.@.
+	0x0650 00 00 00 90 00 00 00 91 02 00 00 90 42 00 00 91  ............B...
+	0x0660 63 03 80 d2 e4 63 02 91 e5 03 7f b2 e6 03 05 aa  c....c..........
+	0x0670 00 00 00 94 00 00 00 94 01 00 00 90 21 00 00 91  ............!...
+	0x0680 e1 47 00 f9 01 00 00 90 21 00 00 91 e1 4b 00 f9  .G......!....K..
+	0x0690 1b 00 00 90 61 03 40 f9 00 00 00 90 00 00 00 91  ....a.@.........
+	0x06a0 e2 23 02 91 e3 03 40 b2 e4 03 03 aa 00 00 00 94  .#....@.........
+	0x06b0 fd fb 7f a9 ff 83 09 91 c0 03 5f d6 e3 03 1e aa  .........._.....
+	0x06c0 00 00 00 94 4f fe ff 17 00 00 00 00 00 00 00 00  ....O...........
+	rel 0+0 t=R_USEIFACE type:string+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:string+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:string+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:[]int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:string+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:int64+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 0+0 t=R_USEIFACE type:string+0
+	rel 0+0 t=R_USEIFACE type:*os.File+0
+	rel 32+8 t=R_ADDRARM64 type:string+0
+	rel 44+8 t=R_ADDRARM64 main..stmp_6+0
+	rel 56+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 64+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 84+4 t=R_CALLARM64 fmt.Fprintln+0
+	rel 88+8 t=R_ADDRARM64 type:string+0
+	rel 100+8 t=R_ADDRARM64 main..stmp_7+0
+	rel 112+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 120+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 140+4 t=R_CALLARM64 fmt.Fprintln+0
+	rel 160+4 t=R_CALLARM64 main.add_asm+0
+	rel 200+4 t=R_CALLARM64 runtime.convT64+0
+	rel 204+8 t=R_ADDRARM64 type:int64+0
+	rel 224+4 t=R_CALLARM64 runtime.convT64+0
+	rel 228+8 t=R_ADDRARM64 type:int64+0
+	rel 248+4 t=R_CALLARM64 runtime.convT64+0
+	rel 252+8 t=R_ADDRARM64 type:int64+0
+	rel 268+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 276+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 284+8 t=R_ADDRARM64 go:string."Addition: %d + %d = %d\n"+0
+	rel 308+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 328+4 t=R_CALLARM64 main.multiply_asm+0
+	rel 356+4 t=R_CALLARM64 runtime.convT64+0
+	rel 360+8 t=R_ADDRARM64 type:int64+0
+	rel 380+4 t=R_CALLARM64 runtime.convT64+0
+	rel 384+8 t=R_ADDRARM64 type:int64+0
+	rel 404+4 t=R_CALLARM64 runtime.convT64+0
+	rel 408+8 t=R_ADDRARM64 type:int64+0
+	rel 424+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 432+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 440+8 t=R_ADDRARM64 go:string."Multiplication: %d * %d = %d\n"+0
+	rel 464+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 476+4 t=R_CALLARM64 main.factorial_asm+0
+	rel 500+4 t=R_CALLARM64 runtime.convT64+0
+	rel 504+8 t=R_ADDRARM64 type:int64+0
+	rel 524+4 t=R_CALLARM64 runtime.convT64+0
+	rel 528+8 t=R_ADDRARM64 type:int64+0
+	rel 544+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 552+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 560+8 t=R_ADDRARM64 go:string."Factorial: %d! = %d\n"+0
+	rel 584+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 588+8 t=R_ADDRARM64 type:uint8+0
+	rel 604+8 t=R_ADDRARM64 go:string."Hello, ARM64 Assembly!"+0
+	rel 612+4 t=R_CALLARM64 runtime.makeslicecopy+0
+	rel 628+4 t=R_CALLARM64 main.strlen_asm+0
+	rel 648+8 t=R_ADDRARM64 go:string."Hello, ARM64 Assembly!"+0
+	rel 660+4 t=R_CALLARM64 runtime.convTstring+0
+	rel 664+8 t=R_ADDRARM64 type:string+0
+	rel 684+4 t=R_CALLARM64 runtime.convT64+0
+	rel 688+8 t=R_ADDRARM64 type:int64+0
+	rel 704+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 712+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 720+8 t=R_ADDRARM64 go:string."String length of '%s': %d\n"+0
+	rel 744+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 748+8 t=R_ADDRARM64 type:[10]int64+0
+	rel 756+4 t=R_CALLARM64 runtime.newobject+0
+	rel 864+4 t=R_CALLARM64 main.sum_array_asm+0
+	rel 896+4 t=R_CALLARM64 runtime.convTslice+0
+	rel 900+8 t=R_ADDRARM64 type:[]int64+0
+	rel 920+4 t=R_CALLARM64 runtime.convT64+0
+	rel 924+8 t=R_ADDRARM64 type:int64+0
+	rel 940+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 948+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 956+8 t=R_ADDRARM64 go:string."Sum of array %v: %d\n"+0
+	rel 980+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 984+8 t=R_ADDRARM64 type:string+0
+	rel 996+8 t=R_ADDRARM64 main..stmp_8+0
+	rel 1008+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 1016+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 1036+4 t=R_CALLARM64 fmt.Fprintln+0
+	rel 1060+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1064+8 t=R_ADDRARM64 type:int64+0
+	rel 1084+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1088+8 t=R_ADDRARM64 type:int64+0
+	rel 1108+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1112+8 t=R_ADDRARM64 type:int64+0
+	rel 1132+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1136+8 t=R_ADDRARM64 type:int64+0
+	rel 1152+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 1160+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 1168+8 t=R_ADDRARM64 go:string."Go addition: %d + %d = %d (ASM: %d)\n"+0
+	rel 1192+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 1216+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1220+8 t=R_ADDRARM64 type:int64+0
+	rel 1240+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1244+8 t=R_ADDRARM64 type:int64+0
+	rel 1264+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1268+8 t=R_ADDRARM64 type:int64+0
+	rel 1288+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1292+8 t=R_ADDRARM64 type:int64+0
+	rel 1308+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 1316+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 1324+8 t=R_ADDRARM64 go:string."Go multiplication: %d * %d = %d (ASM: %d)\n"+0
+	rel 1348+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 1404+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1408+8 t=R_ADDRARM64 type:int64+0
+	rel 1428+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1432+8 t=R_ADDRARM64 type:int64+0
+	rel 1452+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1456+8 t=R_ADDRARM64 type:int64+0
+	rel 1472+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 1480+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 1488+8 t=R_ADDRARM64 go:string."Go factorial: %d! = %d (ASM: %d)\n"+0
+	rel 1512+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 1564+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1568+8 t=R_ADDRARM64 type:int64+0
+	rel 1588+4 t=R_CALLARM64 runtime.convT64+0
+	rel 1592+8 t=R_ADDRARM64 type:int64+0
+	rel 1608+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 1616+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 1624+8 t=R_ADDRARM64 go:string."Go array sum: %d (ASM: %d)\n"+0
+	rel 1648+4 t=R_CALLARM64 fmt.Fprintf+0
+	rel 1652+4 t=R_CALLARM64 main.runBenchmarks+0
+	rel 1656+8 t=R_ADDRARM64 type:string+0
+	rel 1668+8 t=R_ADDRARM64 main..stmp_9+0
+	rel 1680+8 t=R_ARM64_PCREL_LDST64 os.Stdout+0
+	rel 1688+8 t=R_ADDRARM64 go:itab.*os.File,io.Writer+0
+	rel 1708+4 t=R_CALLARM64 fmt.Fprintln+0
+	rel 1728+4 t=R_CALLARM64 runtime.morestack_noctxt+0
+main.factorial_go STEXT size=64 args=0x8 locals=0x0 funcid=0x0 align=0x0 leaf
+	0x0000 00000 (/Users/jan/Development/go_asm_module/main.go:70)	TEXT	main.factorial_go(SB), LEAF|NOFRAME|ABIInternal, $0-8
+	0x0000 00000 (/Users/jan/Development/go_asm_module/main.go:70)	FUNCDATA	$0, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x0000 00000 (/Users/jan/Development/go_asm_module/main.go:70)	FUNCDATA	$1, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x0000 00000 (/Users/jan/Development/go_asm_module/main.go:70)	FUNCDATA	$5, main.factorial_go.arginfo1(SB)
+	0x0000 00000 (/Users/jan/Development/go_asm_module/main.go:70)	FUNCDATA	$6, main.factorial_go.argliveinfo(SB)
+	0x0000 00000 (/Users/jan/Development/go_asm_module/main.go:70)	PCDATA	$3, $1
+	0x0000 00000 (/Users/jan/Development/go_asm_module/main.go:71)	CMP	$1, R0
+	0x0004 00004 (/Users/jan/Development/go_asm_module/main.go:71)	BLE	20
+	0x0008 00008 (/Users/jan/Development/go_asm_module/main.go:71)	MOVD	$2, R1
+	0x000c 00012 (/Users/jan/Development/go_asm_module/main.go:71)	MOVD	$1, R2
+	0x0010 00016 (/Users/jan/Development/go_asm_module/main.go:71)	JMP	40
+	0x0014 00020 (/Users/jan/Development/go_asm_module/main.go:72)	MOVD	$1, R0
+	0x0018 00024 (/Users/jan/Development/go_asm_module/main.go:72)	RET	(R30)
+	0x001c 00028 (/Users/jan/Development/go_asm_module/main.go:75)	ADD	$1, R1, R3
+	0x0020 00032 (/Users/jan/Development/go_asm_module/main.go:76)	MUL	R1, R2, R2
+	0x0024 00036 (/Users/jan/Development/go_asm_module/main.go:75)	MOVD	R3, R1
+	0x0028 00040 (/Users/jan/Development/go_asm_module/main.go:75)	CMP	R1, R0
+	0x002c 00044 (/Users/jan/Development/go_asm_module/main.go:75)	BGE	28
+	0x0030 00048 (/Users/jan/Development/go_asm_module/main.go:78)	MOVD	R2, R0
+	0x0034 00052 (/Users/jan/Development/go_asm_module/main.go:78)	RET	(R30)
+	0x0000 1f 04 00 f1 8d 00 00 54 e1 03 7f b2 e2 03 40 b2  .......T......@.
+	0x0010 06 00 00 14 e0 03 40 b2 c0 03 5f d6 23 04 00 91  ......@..._.#...
+	0x0020 42 7c 01 9b e1 03 03 aa 1f 00 01 eb 8a ff ff 54  B|.............T
+	0x0030 e0 03 02 aa c0 03 5f d6 00 00 00 00 00 00 00 00  ......_.........
+main.add_asm STEXT dupok nosplit size=48 args=0x10 locals=0x28 funcid=0x16 align=0x0
+	0x0000 00000 (<autogenerated>:1)	TEXT	main.add_asm(SB), DUPOK|NOSPLIT|ABIWRAPPER|ABIInternal, $48-16
+	0x0000 00000 (<autogenerated>:1)	MOVD.W	R30, -48(RSP)
+	0x0004 00004 (<autogenerated>:1)	MOVD	R29, -8(RSP)
+	0x0008 00008 (<autogenerated>:1)	SUB	$8, RSP, R29
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$0, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$1, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$5, main.add_asm.arginfo1(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$6, main.add_asm.argliveinfo(SB)
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$3, $1
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x000c 00012 (<autogenerated>:1)	MOVD	R0, 8(RSP)
+	0x0010 00016 (<autogenerated>:1)	MOVD	R1, 16(RSP)
+	0x0014 00020 (<autogenerated>:1)	PCDATA	$1, $0
+	0x0014 00020 (<autogenerated>:1)	CALL	main.add_asm(SB)
+	0x0018 00024 (<autogenerated>:1)	MOVD	24(RSP), R0
+	0x001c 00028 (<autogenerated>:1)	MOVD	-8(RSP), R29
+	0x0020 00032 (<autogenerated>:1)	MOVD.P	48(RSP), R30
+	0x0024 00036 (<autogenerated>:1)	RET	(R30)
+	0x0000 fe 0f 1d f8 fd 83 1f f8 fd 23 00 d1 e0 07 00 f9  .........#......
+	0x0010 e1 0b 00 f9 00 00 00 94 e0 0f 40 f9 fd 83 5f f8  ..........@..._.
+	0x0020 fe 07 43 f8 c0 03 5f d6 00 00 00 00 00 00 00 00  ..C..._.........
+	rel 20+4 t=R_CALLARM64 main.add_asm+0
+main.multiply_asm STEXT dupok nosplit size=48 args=0x10 locals=0x28 funcid=0x16 align=0x0
+	0x0000 00000 (<autogenerated>:1)	TEXT	main.multiply_asm(SB), DUPOK|NOSPLIT|ABIWRAPPER|ABIInternal, $48-16
+	0x0000 00000 (<autogenerated>:1)	MOVD.W	R30, -48(RSP)
+	0x0004 00004 (<autogenerated>:1)	MOVD	R29, -8(RSP)
+	0x0008 00008 (<autogenerated>:1)	SUB	$8, RSP, R29
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$0, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$1, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$5, main.multiply_asm.arginfo1(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$6, main.multiply_asm.argliveinfo(SB)
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$3, $1
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x000c 00012 (<autogenerated>:1)	MOVD	R0, 8(RSP)
+	0x0010 00016 (<autogenerated>:1)	MOVD	R1, 16(RSP)
+	0x0014 00020 (<autogenerated>:1)	PCDATA	$1, $0
+	0x0014 00020 (<autogenerated>:1)	CALL	main.multiply_asm(SB)
+	0x0018 00024 (<autogenerated>:1)	MOVD	24(RSP), R0
+	0x001c 00028 (<autogenerated>:1)	MOVD	-8(RSP), R29
+	0x0020 00032 (<autogenerated>:1)	MOVD.P	48(RSP), R30
+	0x0024 00036 (<autogenerated>:1)	RET	(R30)
+	0x0000 fe 0f 1d f8 fd 83 1f f8 fd 23 00 d1 e0 07 00 f9  .........#......
+	0x0010 e1 0b 00 f9 00 00 00 94 e0 0f 40 f9 fd 83 5f f8  ..........@..._.
+	0x0020 fe 07 43 f8 c0 03 5f d6 00 00 00 00 00 00 00 00  ..C..._.........
+	rel 20+4 t=R_CALLARM64 main.multiply_asm+0
+main.factorial_asm STEXT dupok nosplit size=48 args=0x8 locals=0x18 funcid=0x16 align=0x0
+	0x0000 00000 (<autogenerated>:1)	TEXT	main.factorial_asm(SB), DUPOK|NOSPLIT|ABIWRAPPER|ABIInternal, $32-8
+	0x0000 00000 (<autogenerated>:1)	MOVD.W	R30, -32(RSP)
+	0x0004 00004 (<autogenerated>:1)	MOVD	R29, -8(RSP)
+	0x0008 00008 (<autogenerated>:1)	SUB	$8, RSP, R29
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$0, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$1, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$5, main.factorial_asm.arginfo1(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$6, main.factorial_asm.argliveinfo(SB)
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$3, $1
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x000c 00012 (<autogenerated>:1)	MOVD	R0, 8(RSP)
+	0x0010 00016 (<autogenerated>:1)	PCDATA	$1, $0
+	0x0010 00016 (<autogenerated>:1)	CALL	main.factorial_asm(SB)
+	0x0014 00020 (<autogenerated>:1)	MOVD	16(RSP), R0
+	0x0018 00024 (<autogenerated>:1)	MOVD	-8(RSP), R29
+	0x001c 00028 (<autogenerated>:1)	MOVD.P	32(RSP), R30
+	0x0020 00032 (<autogenerated>:1)	RET	(R30)
+	0x0000 fe 0f 1e f8 fd 83 1f f8 fd 23 00 d1 e0 07 00 f9  .........#......
+	0x0010 00 00 00 94 e0 0b 40 f9 fd 83 5f f8 fe 07 42 f8  ......@..._...B.
+	0x0020 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+4 t=R_CALLARM64 main.factorial_asm+0
+main.strlen_asm STEXT dupok nosplit size=48 args=0x8 locals=0x18 funcid=0x16 align=0x0
+	0x0000 00000 (<autogenerated>:1)	TEXT	main.strlen_asm(SB), DUPOK|NOSPLIT|ABIWRAPPER|ABIInternal, $32-8
+	0x0000 00000 (<autogenerated>:1)	MOVD.W	R30, -32(RSP)
+	0x0004 00004 (<autogenerated>:1)	MOVD	R29, -8(RSP)
+	0x0008 00008 (<autogenerated>:1)	SUB	$8, RSP, R29
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$0, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$1, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$5, main.strlen_asm.arginfo1(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$6, main.strlen_asm.argliveinfo(SB)
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$3, $1
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x000c 00012 (<autogenerated>:1)	MOVD	R0, 8(RSP)
+	0x0010 00016 (<autogenerated>:1)	PCDATA	$1, $0
+	0x0010 00016 (<autogenerated>:1)	CALL	main.strlen_asm(SB)
+	0x0014 00020 (<autogenerated>:1)	MOVD	16(RSP), R0
+	0x0018 00024 (<autogenerated>:1)	MOVD	-8(RSP), R29
+	0x001c 00028 (<autogenerated>:1)	MOVD.P	32(RSP), R30
+	0x0020 00032 (<autogenerated>:1)	RET	(R30)
+	0x0000 fe 0f 1e f8 fd 83 1f f8 fd 23 00 d1 e0 07 00 f9  .........#......
+	0x0010 00 00 00 94 e0 0b 40 f9 fd 83 5f f8 fe 07 42 f8  ......@..._...B.
+	0x0020 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+	rel 16+4 t=R_CALLARM64 main.strlen_asm+0
+main.sum_array_asm STEXT dupok nosplit size=48 args=0x10 locals=0x28 funcid=0x16 align=0x0
+	0x0000 00000 (<autogenerated>:1)	TEXT	main.sum_array_asm(SB), DUPOK|NOSPLIT|ABIWRAPPER|ABIInternal, $48-16
+	0x0000 00000 (<autogenerated>:1)	MOVD.W	R30, -48(RSP)
+	0x0004 00004 (<autogenerated>:1)	MOVD	R29, -8(RSP)
+	0x0008 00008 (<autogenerated>:1)	SUB	$8, RSP, R29
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$0, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$1, gclocals·FzY36IO2mY0y4dZ1+Izd/w==(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$5, main.sum_array_asm.arginfo1(SB)
+	0x000c 00012 (<autogenerated>:1)	FUNCDATA	$6, main.sum_array_asm.argliveinfo(SB)
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$3, $1
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x000c 00012 (<autogenerated>:1)	MOVD	R0, 8(RSP)
+	0x0010 00016 (<autogenerated>:1)	MOVD	R1, 16(RSP)
+	0x0014 00020 (<autogenerated>:1)	PCDATA	$1, $0
+	0x0014 00020 (<autogenerated>:1)	CALL	main.sum_array_asm(SB)
+	0x0018 00024 (<autogenerated>:1)	MOVD	24(RSP), R0
+	0x001c 00028 (<autogenerated>:1)	MOVD	-8(RSP), R29
+	0x0020 00032 (<autogenerated>:1)	MOVD.P	48(RSP), R30
+	0x0024 00036 (<autogenerated>:1)	RET	(R30)
+	0x0000 fe 0f 1d f8 fd 83 1f f8 fd 23 00 d1 e0 07 00 f9  .........#......
+	0x0010 e1 0b 00 f9 00 00 00 94 e0 0f 40 f9 fd 83 5f f8  ..........@..._.
+	0x0020 fe 07 43 f8 c0 03 5f d6 00 00 00 00 00 00 00 00  ..C..._.........
+	rel 20+4 t=R_CALLARM64 main.sum_array_asm+0
+type:.eq.sync/atomic.Pointer[os.dirInfo] STEXT dupok size=32 args=0x10 locals=0x0 funcid=0x0 align=0x0 leaf
+	0x0000 00000 (<autogenerated>:1)	TEXT	type:.eq.sync/atomic.Pointer[os.dirInfo](SB), DUPOK|LEAF|NOFRAME|ABIInternal, $0-16
+	0x0000 00000 (<autogenerated>:1)	FUNCDATA	$0, gclocals·rJbr+btbFJy3NLIRCgNSZQ==(SB)
+	0x0000 00000 (<autogenerated>:1)	FUNCDATA	$1, gclocals·ISb46fRPFoZ9pIfykFK/kQ==(SB)
+	0x0000 00000 (<autogenerated>:1)	FUNCDATA	$5, type:.eq.sync/atomic.Pointer[os.dirInfo].arginfo1(SB)
+	0x0000 00000 (<autogenerated>:1)	FUNCDATA	$6, type:.eq.sync/atomic.Pointer[os.dirInfo].argliveinfo(SB)
+	0x0000 00000 (<autogenerated>:1)	PCDATA	$3, $1
+	0x0000 00000 (<autogenerated>:1)	MOVD	(R1), R1
+	0x0004 00004 (<autogenerated>:1)	MOVD	(R0), R2
+	0x0008 00008 (<autogenerated>:1)	CMP	R2, R1
+	0x000c 00012 (<autogenerated>:1)	CSET	EQ, R0
+	0x0010 00016 (<autogenerated>:1)	RET	(R30)
+	0x0000 21 00 40 f9 02 00 40 f9 3f 00 02 eb e0 17 9f 9a  !.@...@.?.......
+	0x0010 c0 03 5f d6 00 00 00 00 00 00 00 00 00 00 00 00  .._.............
+type:.eq.[2]interface {} STEXT dupok size=176 args=0x10 locals=0x28 funcid=0x0 align=0x0
+	0x0000 00000 (<autogenerated>:1)	TEXT	type:.eq.[2]interface {}(SB), DUPOK|ABIInternal, $48-16
+	0x0000 00000 (<autogenerated>:1)	MOVD	16(g), R16
+	0x0004 00004 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x0004 00004 (<autogenerated>:1)	CMP	R16, RSP
+	0x0008 00008 (<autogenerated>:1)	BLS	144
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x000c 00012 (<autogenerated>:1)	MOVD.W	R30, -48(RSP)
+	0x0010 00016 (<autogenerated>:1)	MOVD	R29, -8(RSP)
+	0x0014 00020 (<autogenerated>:1)	SUB	$8, RSP, R29
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$0, gclocals·rJbr+btbFJy3NLIRCgNSZQ==(SB)
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$1, gclocals·ISb46fRPFoZ9pIfykFK/kQ==(SB)
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$5, type:.eq.[2]interface {}.arginfo1(SB)
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$6, type:.eq.[2]interface {}.argliveinfo(SB)
+	0x0018 00024 (<autogenerated>:1)	PCDATA	$3, $1
+	0x0018 00024 (<autogenerated>:1)	MOVD	R0, main.p(FP)
+	0x001c 00028 (<autogenerated>:1)	MOVD	R1, main.q+8(FP)
+	0x0020 00032 (<autogenerated>:1)	PCDATA	$3, $-1
+	0x0020 00032 (<autogenerated>:1)	MOVD	ZR, R2
+	0x0024 00036 (<autogenerated>:1)	JMP	52
+	0x0028 00040 (<autogenerated>:1)	ADD	$1, R3, R2
+	0x002c 00044 (<autogenerated>:1)	MOVD	main.p(FP), R0
+	0x0030 00048 (<autogenerated>:1)	MOVD	main.q+8(FP), R1
+	0x0034 00052 (<autogenerated>:1)	CMP	$2, R2
+	0x0038 00056 (<autogenerated>:1)	BGE	128
+	0x003c 00060 (<autogenerated>:1)	LSL	$4, R2, R3
+	0x0040 00064 (<autogenerated>:1)	MOVD	(R0)(R3), R4
+	0x0044 00068 (<autogenerated>:1)	MOVD	(R1)(R3), R3
+	0x0048 00072 (<autogenerated>:1)	ADD	R2<<4, R1, R5
+	0x004c 00076 (<autogenerated>:1)	ADD	R2<<4, R0, R6
+	0x0050 00080 (<autogenerated>:1)	CMP	R4, R3
+	0x0054 00084 (<autogenerated>:1)	BNE	124
+	0x0058 00088 (<autogenerated>:1)	MOVD	R2, main..autotmp_6-8(SP)
+	0x005c 00092 (<autogenerated>:1)	MOVD	8(R6), R1
+	0x0060 00096 (<autogenerated>:1)	MOVD	8(R5), R2
+	0x0064 00100 (<autogenerated>:1)	MOVD	R4, R0
+	0x0068 00104 (<autogenerated>:1)	PCDATA	$1, $0
+	0x0068 00104 (<autogenerated>:1)	CALL	runtime.efaceeq(SB)
+	0x006c 00108 (<autogenerated>:1)	MOVD	main..autotmp_6-8(SP), R3
+	0x0070 00112 (<autogenerated>:1)	CMP	$2, R3
+	0x0074 00116 (<autogenerated>:1)	TBNZ	$0, R0, 40
+	0x0078 00120 (<autogenerated>:1)	JMP	128
+	0x007c 00124 (<autogenerated>:1)	CMP	$2, R2
+	0x0080 00128 (<autogenerated>:1)	CSET	GE, R0
+	0x0084 00132 (<autogenerated>:1)	MOVD	-8(RSP), R29
+	0x0088 00136 (<autogenerated>:1)	MOVD.P	48(RSP), R30
+	0x008c 00140 (<autogenerated>:1)	RET	(R30)
+	0x0090 00144 (<autogenerated>:1)	NOP
+	0x0090 00144 (<autogenerated>:1)	PCDATA	$1, $-1
+	0x0090 00144 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x0090 00144 (<autogenerated>:1)	STP	(R0, R1), 8(RSP)
+	0x0094 00148 (<autogenerated>:1)	MOVD	R30, R3
+	0x0098 00152 (<autogenerated>:1)	CALL	runtime.morestack_noctxt(SB)
+	0x009c 00156 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x009c 00156 (<autogenerated>:1)	LDP	8(RSP), (R0, R1)
+	0x00a0 00160 (<autogenerated>:1)	JMP	0
+	0x0000 90 0b 40 f9 ff 63 30 eb 49 04 00 54 fe 0f 1d f8  ..@..c0.I..T....
+	0x0010 fd 83 1f f8 fd 23 00 d1 e0 1f 00 f9 e1 23 00 f9  .....#.......#..
+	0x0020 e2 03 1f aa 04 00 00 14 62 04 00 91 e0 1f 40 f9  ........b.....@.
+	0x0030 e1 23 40 f9 5f 08 00 f1 4a 02 00 54 43 ec 7c d3  .#@._...J..TC.|.
+	0x0040 04 68 63 f8 23 68 63 f8 25 10 02 8b 06 10 02 8b  .hc.#hc.%.......
+	0x0050 7f 00 04 eb 41 01 00 54 e2 13 00 f9 c1 04 40 f9  ....A..T......@.
+	0x0060 a2 04 40 f9 e0 03 04 aa 00 00 00 94 e3 13 40 f9  ..@...........@.
+	0x0070 7f 08 00 f1 a0 fd 07 37 02 00 00 14 5f 08 00 f1  .......7...._...
+	0x0080 e0 b7 9f 9a fd 83 5f f8 fe 07 43 f8 c0 03 5f d6  ......_...C..._.
+	0x0090 e0 87 00 a9 e3 03 1e aa 00 00 00 94 e0 87 40 a9  ..............@.
+	0x00a0 d8 ff ff 17 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 104+4 t=R_CALLARM64 runtime.efaceeq+0
+	rel 152+4 t=R_CALLARM64 runtime.morestack_noctxt+0
+type:.eq.[3]interface {} STEXT dupok size=176 args=0x10 locals=0x28 funcid=0x0 align=0x0
+	0x0000 00000 (<autogenerated>:1)	TEXT	type:.eq.[3]interface {}(SB), DUPOK|ABIInternal, $48-16
+	0x0000 00000 (<autogenerated>:1)	MOVD	16(g), R16
+	0x0004 00004 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x0004 00004 (<autogenerated>:1)	CMP	R16, RSP
+	0x0008 00008 (<autogenerated>:1)	BLS	144
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x000c 00012 (<autogenerated>:1)	MOVD.W	R30, -48(RSP)
+	0x0010 00016 (<autogenerated>:1)	MOVD	R29, -8(RSP)
+	0x0014 00020 (<autogenerated>:1)	SUB	$8, RSP, R29
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$0, gclocals·rJbr+btbFJy3NLIRCgNSZQ==(SB)
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$1, gclocals·ISb46fRPFoZ9pIfykFK/kQ==(SB)
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$5, type:.eq.[3]interface {}.arginfo1(SB)
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$6, type:.eq.[3]interface {}.argliveinfo(SB)
+	0x0018 00024 (<autogenerated>:1)	PCDATA	$3, $1
+	0x0018 00024 (<autogenerated>:1)	MOVD	R0, main.p(FP)
+	0x001c 00028 (<autogenerated>:1)	MOVD	R1, main.q+8(FP)
+	0x0020 00032 (<autogenerated>:1)	PCDATA	$3, $-1
+	0x0020 00032 (<autogenerated>:1)	MOVD	ZR, R2
+	0x0024 00036 (<autogenerated>:1)	JMP	52
+	0x0028 00040 (<autogenerated>:1)	ADD	$1, R3, R2
+	0x002c 00044 (<autogenerated>:1)	MOVD	main.p(FP), R0
+	0x0030 00048 (<autogenerated>:1)	MOVD	main.q+8(FP), R1
+	0x0034 00052 (<autogenerated>:1)	CMP	$3, R2
+	0x0038 00056 (<autogenerated>:1)	BGE	128
+	0x003c 00060 (<autogenerated>:1)	LSL	$4, R2, R3
+	0x0040 00064 (<autogenerated>:1)	MOVD	(R0)(R3), R4
+	0x0044 00068 (<autogenerated>:1)	MOVD	(R1)(R3), R3
+	0x0048 00072 (<autogenerated>:1)	ADD	R2<<4, R1, R5
+	0x004c 00076 (<autogenerated>:1)	ADD	R2<<4, R0, R6
+	0x0050 00080 (<autogenerated>:1)	CMP	R4, R3
+	0x0054 00084 (<autogenerated>:1)	BNE	124
+	0x0058 00088 (<autogenerated>:1)	MOVD	R2, main..autotmp_6-8(SP)
+	0x005c 00092 (<autogenerated>:1)	MOVD	8(R6), R1
+	0x0060 00096 (<autogenerated>:1)	MOVD	8(R5), R2
+	0x0064 00100 (<autogenerated>:1)	MOVD	R4, R0
+	0x0068 00104 (<autogenerated>:1)	PCDATA	$1, $0
+	0x0068 00104 (<autogenerated>:1)	CALL	runtime.efaceeq(SB)
+	0x006c 00108 (<autogenerated>:1)	MOVD	main..autotmp_6-8(SP), R3
+	0x0070 00112 (<autogenerated>:1)	CMP	$3, R3
+	0x0074 00116 (<autogenerated>:1)	TBNZ	$0, R0, 40
+	0x0078 00120 (<autogenerated>:1)	JMP	128
+	0x007c 00124 (<autogenerated>:1)	CMP	$3, R2
+	0x0080 00128 (<autogenerated>:1)	CSET	GE, R0
+	0x0084 00132 (<autogenerated>:1)	MOVD	-8(RSP), R29
+	0x0088 00136 (<autogenerated>:1)	MOVD.P	48(RSP), R30
+	0x008c 00140 (<autogenerated>:1)	RET	(R30)
+	0x0090 00144 (<autogenerated>:1)	NOP
+	0x0090 00144 (<autogenerated>:1)	PCDATA	$1, $-1
+	0x0090 00144 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x0090 00144 (<autogenerated>:1)	STP	(R0, R1), 8(RSP)
+	0x0094 00148 (<autogenerated>:1)	MOVD	R30, R3
+	0x0098 00152 (<autogenerated>:1)	CALL	runtime.morestack_noctxt(SB)
+	0x009c 00156 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x009c 00156 (<autogenerated>:1)	LDP	8(RSP), (R0, R1)
+	0x00a0 00160 (<autogenerated>:1)	JMP	0
+	0x0000 90 0b 40 f9 ff 63 30 eb 49 04 00 54 fe 0f 1d f8  ..@..c0.I..T....
+	0x0010 fd 83 1f f8 fd 23 00 d1 e0 1f 00 f9 e1 23 00 f9  .....#.......#..
+	0x0020 e2 03 1f aa 04 00 00 14 62 04 00 91 e0 1f 40 f9  ........b.....@.
+	0x0030 e1 23 40 f9 5f 0c 00 f1 4a 02 00 54 43 ec 7c d3  .#@._...J..TC.|.
+	0x0040 04 68 63 f8 23 68 63 f8 25 10 02 8b 06 10 02 8b  .hc.#hc.%.......
+	0x0050 7f 00 04 eb 41 01 00 54 e2 13 00 f9 c1 04 40 f9  ....A..T......@.
+	0x0060 a2 04 40 f9 e0 03 04 aa 00 00 00 94 e3 13 40 f9  ..@...........@.
+	0x0070 7f 0c 00 f1 a0 fd 07 37 02 00 00 14 5f 0c 00 f1  .......7...._...
+	0x0080 e0 b7 9f 9a fd 83 5f f8 fe 07 43 f8 c0 03 5f d6  ......_...C..._.
+	0x0090 e0 87 00 a9 e3 03 1e aa 00 00 00 94 e0 87 40 a9  ..............@.
+	0x00a0 d8 ff ff 17 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 104+4 t=R_CALLARM64 runtime.efaceeq+0
+	rel 152+4 t=R_CALLARM64 runtime.morestack_noctxt+0
+type:.eq.[4]interface {} STEXT dupok size=176 args=0x10 locals=0x28 funcid=0x0 align=0x0
+	0x0000 00000 (<autogenerated>:1)	TEXT	type:.eq.[4]interface {}(SB), DUPOK|ABIInternal, $48-16
+	0x0000 00000 (<autogenerated>:1)	MOVD	16(g), R16
+	0x0004 00004 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x0004 00004 (<autogenerated>:1)	CMP	R16, RSP
+	0x0008 00008 (<autogenerated>:1)	BLS	144
+	0x000c 00012 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x000c 00012 (<autogenerated>:1)	MOVD.W	R30, -48(RSP)
+	0x0010 00016 (<autogenerated>:1)	MOVD	R29, -8(RSP)
+	0x0014 00020 (<autogenerated>:1)	SUB	$8, RSP, R29
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$0, gclocals·rJbr+btbFJy3NLIRCgNSZQ==(SB)
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$1, gclocals·ISb46fRPFoZ9pIfykFK/kQ==(SB)
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$5, type:.eq.[4]interface {}.arginfo1(SB)
+	0x0018 00024 (<autogenerated>:1)	FUNCDATA	$6, type:.eq.[4]interface {}.argliveinfo(SB)
+	0x0018 00024 (<autogenerated>:1)	PCDATA	$3, $1
+	0x0018 00024 (<autogenerated>:1)	MOVD	R0, main.p(FP)
+	0x001c 00028 (<autogenerated>:1)	MOVD	R1, main.q+8(FP)
+	0x0020 00032 (<autogenerated>:1)	PCDATA	$3, $-1
+	0x0020 00032 (<autogenerated>:1)	MOVD	ZR, R2
+	0x0024 00036 (<autogenerated>:1)	JMP	52
+	0x0028 00040 (<autogenerated>:1)	ADD	$1, R3, R2
+	0x002c 00044 (<autogenerated>:1)	MOVD	main.p(FP), R0
+	0x0030 00048 (<autogenerated>:1)	MOVD	main.q+8(FP), R1
+	0x0034 00052 (<autogenerated>:1)	CMP	$4, R2
+	0x0038 00056 (<autogenerated>:1)	BGE	128
+	0x003c 00060 (<autogenerated>:1)	LSL	$4, R2, R3
+	0x0040 00064 (<autogenerated>:1)	MOVD	(R0)(R3), R4
+	0x0044 00068 (<autogenerated>:1)	MOVD	(R1)(R3), R3
+	0x0048 00072 (<autogenerated>:1)	ADD	R2<<4, R1, R5
+	0x004c 00076 (<autogenerated>:1)	ADD	R2<<4, R0, R6
+	0x0050 00080 (<autogenerated>:1)	CMP	R4, R3
+	0x0054 00084 (<autogenerated>:1)	BNE	124
+	0x0058 00088 (<autogenerated>:1)	MOVD	R2, main..autotmp_6-8(SP)
+	0x005c 00092 (<autogenerated>:1)	MOVD	8(R6), R1
+	0x0060 00096 (<autogenerated>:1)	MOVD	8(R5), R2
+	0x0064 00100 (<autogenerated>:1)	MOVD	R4, R0
+	0x0068 00104 (<autogenerated>:1)	PCDATA	$1, $0
+	0x0068 00104 (<autogenerated>:1)	CALL	runtime.efaceeq(SB)
+	0x006c 00108 (<autogenerated>:1)	MOVD	main..autotmp_6-8(SP), R3
+	0x0070 00112 (<autogenerated>:1)	CMP	$4, R3
+	0x0074 00116 (<autogenerated>:1)	TBNZ	$0, R0, 40
+	0x0078 00120 (<autogenerated>:1)	JMP	128
+	0x007c 00124 (<autogenerated>:1)	CMP	$4, R2
+	0x0080 00128 (<autogenerated>:1)	CSET	GE, R0
+	0x0084 00132 (<autogenerated>:1)	MOVD	-8(RSP), R29
+	0x0088 00136 (<autogenerated>:1)	MOVD.P	48(RSP), R30
+	0x008c 00140 (<autogenerated>:1)	RET	(R30)
+	0x0090 00144 (<autogenerated>:1)	NOP
+	0x0090 00144 (<autogenerated>:1)	PCDATA	$1, $-1
+	0x0090 00144 (<autogenerated>:1)	PCDATA	$0, $-2
+	0x0090 00144 (<autogenerated>:1)	STP	(R0, R1), 8(RSP)
+	0x0094 00148 (<autogenerated>:1)	MOVD	R30, R3
+	0x0098 00152 (<autogenerated>:1)	CALL	runtime.morestack_noctxt(SB)
+	0x009c 00156 (<autogenerated>:1)	PCDATA	$0, $-1
+	0x009c 00156 (<autogenerated>:1)	LDP	8(RSP), (R0, R1)
+	0x00a0 00160 (<autogenerated>:1)	JMP	0
+	0x0000 90 0b 40 f9 ff 63 30 eb 49 04 00 54 fe 0f 1d f8  ..@..c0.I..T....
+	0x0010 fd 83 1f f8 fd 23 00 d1 e0 1f 00 f9 e1 23 00 f9  .....#.......#..
+	0x0020 e2 03 1f aa 04 00 00 14 62 04 00 91 e0 1f 40 f9  ........b.....@.
+	0x0030 e1 23 40 f9 5f 10 00 f1 4a 02 00 54 43 ec 7c d3  .#@._...J..TC.|.
+	0x0040 04 68 63 f8 23 68 63 f8 25 10 02 8b 06 10 02 8b  .hc.#hc.%.......
+	0x0050 7f 00 04 eb 41 01 00 54 e2 13 00 f9 c1 04 40 f9  ....A..T......@.
+	0x0060 a2 04 40 f9 e0 03 04 aa 00 00 00 94 e3 13 40 f9  ..@...........@.
+	0x0070 7f 10 00 f1 a0 fd 07 37 02 00 00 14 5f 10 00 f1  .......7...._...
+	0x0080 e0 b7 9f 9a fd 83 5f f8 fe 07 43 f8 c0 03 5f d6  ......_...C..._.
+	0x0090 e0 87 00 a9 e3 03 1e aa 00 00 00 94 e0 87 40 a9  ..............@.
+	0x00a0 d8 ff ff 17 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 104+4 t=R_CALLARM64 runtime.efaceeq+0
+	rel 152+4 t=R_CALLARM64 runtime.morestack_noctxt+0
+go:cuinfo.producer.main SDWARFCUINFO dupok size=0
+	0x0000 2d 73 68 61 72 65 64 20 72 65 67 61 62 69        -shared regabi
+go:cuinfo.packagename.main SDWARFCUINFO dupok size=0
+	0x0000 6d 61 69 6e                                      main
+go:info.time.Duration.Nanoseconds$abstract SDWARFABSFCN dupok size=40
+	0x0000 05 74 69 6d 65 2e 44 75 72 61 74 69 6f 6e 2e 4e  .time.Duration.N
+	0x0010 61 6e 6f 73 65 63 6f 6e 64 73 00 01 ac 08 01 22  anoseconds....."
+	0x0020 64 00 00 00 00 00 00 00                          d.......
+	rel 0+0 t=R_USETYPE type:int64+0
+	rel 0+0 t=R_USETYPE type:time.Duration+0
+	rel 35+4 t=R_DWARFSECREF go:info.time.Duration+0
+go:info.fmt.Printf$abstract SDWARFABSFCN dupok size=56
+	0x0000 05 66 6d 74 2e 50 72 69 6e 74 66 00 01 e8 01 01  .fmt.Printf.....
+	0x0010 22 66 6f 72 6d 61 74 00 00 00 00 00 00 22 61 00  "format......"a.
+	0x0020 00 00 00 00 00 22 6e 00 01 00 00 00 00 22 65 72  ....."n......"er
+	0x0030 72 00 01 00 00 00 00 00                          r.......
+	rel 0+0 t=R_USETYPE type:[]interface {}+0
+	rel 0+0 t=R_USETYPE type:error+0
+	rel 0+0 t=R_USETYPE type:int+0
+	rel 0+0 t=R_USETYPE type:string+0
+	rel 25+4 t=R_DWARFSECREF go:info.string+0
+	rel 33+4 t=R_DWARFSECREF go:info.[]interface {}+0
+	rel 41+4 t=R_DWARFSECREF go:info.int+0
+	rel 51+4 t=R_DWARFSECREF go:info.error+0
+go:itab.*os.File,io.Writer SRODATA dupok size=32
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 c1 d7 bc cc 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 0+8 t=R_ADDR type:io.Writer+0
+	rel 8+8 t=R_ADDR type:*os.File+0
+	rel 24+8 t=RelocType(-32767) os.(*File).Write+0
+sync/atomic..dict.Pointer[os.dirInfo] SRODATA dupok size=128
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00                          ........
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:unsafe.Pointer+0
+	rel 0+0 t=R_USEIFACE type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 0+8 t=R_ADDR type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:unsafe.Pointer+0
+	rel 0+0 t=R_USEIFACE type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 0+0 t=R_USEIFACE type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 0+0 t=R_USEIFACE type:unsafe.Pointer+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 0+0 t=R_USEIFACE type:unsafe.Pointer+0
+	rel 0+0 t=R_USEIFACE type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 0+0 t=R_USEIFACE type:unsafe.Pointer+0
+	rel 0+0 t=R_USEIFACE type:*os.dirInfo+0
+	rel 8+8 t=R_ADDR type:*os.dirInfo+0
+	rel 16+8 t=R_ADDR type:*os.dirInfo+0
+	rel 24+8 t=R_ADDR type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 32+8 t=R_ADDR type:*os.dirInfo+0
+	rel 40+8 t=R_ADDR type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 48+8 t=R_ADDR type:*os.dirInfo+0
+	rel 56+8 t=R_ADDR type:*os.dirInfo+0
+	rel 64+8 t=R_ADDR type:*os.dirInfo+0
+	rel 72+8 t=R_ADDR type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 80+8 t=R_ADDR type:*os.dirInfo+0
+go:info.fmt.Println$abstract SDWARFABSFCN dupok size=44
+	0x0000 05 66 6d 74 2e 50 72 69 6e 74 6c 6e 00 01 b9 02  .fmt.Println....
+	0x0010 01 22 61 00 00 00 00 00 00 22 6e 00 01 00 00 00  ."a......"n.....
+	0x0020 00 22 65 72 72 00 01 00 00 00 00 00              ."err.......
+	rel 0+0 t=R_USETYPE type:[]interface {}+0
+	rel 0+0 t=R_USETYPE type:error+0
+	rel 0+0 t=R_USETYPE type:int+0
+	rel 21+4 t=R_DWARFSECREF go:info.[]interface {}+0
+	rel 29+4 t=R_DWARFSECREF go:info.int+0
+	rel 39+4 t=R_DWARFSECREF go:info.error+0
+go:info.main.factorial_go$abstract SDWARFABSFCN dupok size=52
+	0x0000 05 6d 61 69 6e 2e 66 61 63 74 6f 72 69 61 6c 5f  .main.factorial_
+	0x0010 67 6f 00 01 46 01 22 6e 00 00 00 00 00 00 21 72  go..F."n......!r
+	0x0020 65 73 75 6c 74 00 4a 00 00 00 00 21 69 00 4b 00  esult.J....!i.K.
+	0x0030 00 00 00 00                                      ....
+	rel 26+4 t=R_DWARFSECREF go:info.int64+0
+	rel 39+4 t=R_DWARFSECREF go:info.int64+0
+	rel 47+4 t=R_DWARFSECREF go:info.int64+0
+main..inittask SNOPTRDATA size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+0 t=R_INITORDER fmt..inittask+0
+	rel 0+0 t=R_INITORDER time..inittask+0
+runtime.memequal64·f SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR runtime.memequal64+0
+runtime.gcbits.0100000000000000 SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+type:.namedata.*atomic.Pointer[os.dirInfo]. SRODATA dupok size=29
+	0x0000 01 1b 2a 61 74 6f 6d 69 63 2e 50 6f 69 6e 74 65  ..*atomic.Pointe
+	0x0010 72 5b 6f 73 2e 64 69 72 49 6e 66 6f 5d           r[os.dirInfo]
+type:.eqfunc.sync/atomic.Pointer[os.dirInfo] SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR type:.eq.sync/atomic.Pointer[os.dirInfo]+0
+runtime.memequal0·f SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR runtime.memequal0+0
+type:.namedata.*[0]*os.dirInfo- SRODATA dupok size=17
+	0x0000 00 0f 2a 5b 30 5d 2a 6f 73 2e 64 69 72 49 6e 66  ..*[0]*os.dirInf
+	0x0010 6f                                               o
+type:*[0]*os.dirInfo SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 a6 08 19 82 08 08 08 36 00 00 00 00 00 00 00 00  .......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[0]*os.dirInfo-+0
+	rel 48+8 t=R_ADDR type:[0]*os.dirInfo+0
+runtime.gcbits. SRODATA dupok size=0
+type:.namedata.*[]*os.dirInfo- SRODATA dupok size=16
+	0x0000 00 0e 2a 5b 5d 2a 6f 73 2e 64 69 72 49 6e 66 6f  ..*[]*os.dirInfo
+type:*[]*os.dirInfo SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 9d 8a 6c 8a 08 08 08 36 00 00 00 00 00 00 00 00  ..l....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[]*os.dirInfo-+0
+	rel 48+8 t=R_ADDR type:[]*os.dirInfo+0
+type:[]*os.dirInfo SRODATA dupok size=56
+	0x0000 18 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 55 53 05 41 02 08 08 17 00 00 00 00 00 00 00 00  US.A............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[]*os.dirInfo-+0
+	rel 44+4 t=RelocType(-32763) type:*[]*os.dirInfo+0
+	rel 48+8 t=R_ADDR type:*os.dirInfo+0
+type:[0]*os.dirInfo SRODATA dupok size=72
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 64 82 13 1a 0a 08 08 11 00 00 00 00 00 00 00 00  d...............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal0·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[0]*os.dirInfo-+0
+	rel 44+4 t=RelocType(-32763) type:*[0]*os.dirInfo+0
+	rel 48+8 t=R_ADDR type:*os.dirInfo+0
+	rel 56+8 t=R_ADDR type:[]*os.dirInfo+0
+type:.importpath.sync/atomic. SRODATA dupok size=13
+	0x0000 00 0b 73 79 6e 63 2f 61 74 6f 6d 69 63           ..sync/atomic
+type:.namedata._- SRODATA dupok size=3
+	0x0000 00 01 5f                                         .._
+type:.namedata.v- SRODATA dupok size=3
+	0x0000 00 01 76                                         ..v
+type:sync/atomic.Pointer[os.dirInfo] SRODATA dupok size=168
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 96 c3 42 f6 07 08 08 19 00 00 00 00 00 00 00 00  ..B.............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 03 00 00 00 00 00 00 00 03 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 58 00 00 00 00 00 00 00  ........X.......
+	0x0060 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0080 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0090 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x00a0 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR type:.eqfunc.sync/atomic.Pointer[os.dirInfo]+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*atomic.Pointer[os.dirInfo].+0
+	rel 44+4 t=R_ADDROFF type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 48+8 t=R_ADDR type:.importpath.sync/atomic.+0
+	rel 56+8 t=R_ADDR type:sync/atomic.Pointer[os.dirInfo]+96
+	rel 80+4 t=R_ADDROFF type:.importpath.sync/atomic.+0
+	rel 96+8 t=R_ADDR type:.namedata._-+0
+	rel 104+8 t=R_ADDR type:[0]*os.dirInfo+0
+	rel 120+8 t=R_ADDR type:.namedata._-+0
+	rel 128+8 t=R_ADDR type:sync/atomic.noCopy+0
+	rel 144+8 t=R_ADDR type:.namedata.v-+0
+	rel 152+8 t=R_ADDR type:unsafe.Pointer+0
+type:.namedata.*func(*atomic.Pointer[os.dirInfo], *os.dirInfo, *os.dirInfo) bool- SRODATA dupok size=67
+	0x0000 00 41 2a 66 75 6e 63 28 2a 61 74 6f 6d 69 63 2e  .A*func(*atomic.
+	0x0010 50 6f 69 6e 74 65 72 5b 6f 73 2e 64 69 72 49 6e  Pointer[os.dirIn
+	0x0020 66 6f 5d 2c 20 2a 6f 73 2e 64 69 72 49 6e 66 6f  fo], *os.dirInfo
+	0x0030 2c 20 2a 6f 73 2e 64 69 72 49 6e 66 6f 29 20 62  , *os.dirInfo) b
+	0x0040 6f 6f 6c                                         ool
+type:*func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo, *os.dirInfo) bool SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 fe 18 d0 29 08 08 08 36 00 00 00 00 00 00 00 00  ...)...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*atomic.Pointer[os.dirInfo], *os.dirInfo, *os.dirInfo) bool-+0
+	rel 48+8 t=R_ADDR type:func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo, *os.dirInfo) bool+0
+type:func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo, *os.dirInfo) bool SRODATA dupok size=88
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 b9 bc ac c6 02 08 08 33 00 00 00 00 00 00 00 00  .......3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 03 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00                          ........
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*atomic.Pointer[os.dirInfo], *os.dirInfo, *os.dirInfo) bool-+0
+	rel 44+4 t=RelocType(-32763) type:*func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo, *os.dirInfo) bool+0
+	rel 56+8 t=R_ADDR type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 64+8 t=R_ADDR type:*os.dirInfo+0
+	rel 72+8 t=R_ADDR type:*os.dirInfo+0
+	rel 80+8 t=R_ADDR type:bool+0
+type:.namedata.*func(*atomic.Pointer[os.dirInfo]) *os.dirInfo- SRODATA dupok size=48
+	0x0000 00 2e 2a 66 75 6e 63 28 2a 61 74 6f 6d 69 63 2e  ..*func(*atomic.
+	0x0010 50 6f 69 6e 74 65 72 5b 6f 73 2e 64 69 72 49 6e  Pointer[os.dirIn
+	0x0020 66 6f 5d 29 20 2a 6f 73 2e 64 69 72 49 6e 66 6f  fo]) *os.dirInfo
+type:*func(*sync/atomic.Pointer[os.dirInfo]) *os.dirInfo SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 59 bb 31 13 08 08 08 36 00 00 00 00 00 00 00 00  Y.1....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*atomic.Pointer[os.dirInfo]) *os.dirInfo-+0
+	rel 48+8 t=R_ADDR type:func(*sync/atomic.Pointer[os.dirInfo]) *os.dirInfo+0
+type:func(*sync/atomic.Pointer[os.dirInfo]) *os.dirInfo SRODATA dupok size=72
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 d5 d6 af 2f 02 08 08 33 00 00 00 00 00 00 00 00  .../...3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 01 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00                          ........
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*atomic.Pointer[os.dirInfo]) *os.dirInfo-+0
+	rel 44+4 t=RelocType(-32763) type:*func(*sync/atomic.Pointer[os.dirInfo]) *os.dirInfo+0
+	rel 56+8 t=R_ADDR type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 64+8 t=R_ADDR type:*os.dirInfo+0
+type:.namedata.*func(*atomic.Pointer[os.dirInfo], *os.dirInfo)- SRODATA dupok size=49
+	0x0000 00 2f 2a 66 75 6e 63 28 2a 61 74 6f 6d 69 63 2e  ./*func(*atomic.
+	0x0010 50 6f 69 6e 74 65 72 5b 6f 73 2e 64 69 72 49 6e  Pointer[os.dirIn
+	0x0020 66 6f 5d 2c 20 2a 6f 73 2e 64 69 72 49 6e 66 6f  fo], *os.dirInfo
+	0x0030 29                                               )
+type:*func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo) SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 73 91 45 a4 08 08 08 36 00 00 00 00 00 00 00 00  s.E....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*atomic.Pointer[os.dirInfo], *os.dirInfo)-+0
+	rel 48+8 t=R_ADDR type:func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo)+0
+type:func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo) SRODATA dupok size=72
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 a7 d9 da 27 02 08 08 33 00 00 00 00 00 00 00 00  ...'...3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00                          ........
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*atomic.Pointer[os.dirInfo], *os.dirInfo)-+0
+	rel 44+4 t=RelocType(-32763) type:*func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo)+0
+	rel 56+8 t=R_ADDR type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 64+8 t=R_ADDR type:*os.dirInfo+0
+type:.namedata.*func(*atomic.Pointer[os.dirInfo], *os.dirInfo) *os.dirInfo- SRODATA dupok size=61
+	0x0000 00 3b 2a 66 75 6e 63 28 2a 61 74 6f 6d 69 63 2e  .;*func(*atomic.
+	0x0010 50 6f 69 6e 74 65 72 5b 6f 73 2e 64 69 72 49 6e  Pointer[os.dirIn
+	0x0020 66 6f 5d 2c 20 2a 6f 73 2e 64 69 72 49 6e 66 6f  fo], *os.dirInfo
+	0x0030 29 20 2a 6f 73 2e 64 69 72 49 6e 66 6f           ) *os.dirInfo
+type:*func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo) *os.dirInfo SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 46 0b cc 77 08 08 08 36 00 00 00 00 00 00 00 00  F..w...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*atomic.Pointer[os.dirInfo], *os.dirInfo) *os.dirInfo-+0
+	rel 48+8 t=R_ADDR type:func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo) *os.dirInfo+0
+type:func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo) *os.dirInfo SRODATA dupok size=80
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 3a 47 9e 50 02 08 08 33 00 00 00 00 00 00 00 00  :G.P...3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 02 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*atomic.Pointer[os.dirInfo], *os.dirInfo) *os.dirInfo-+0
+	rel 44+4 t=RelocType(-32763) type:*func(*sync/atomic.Pointer[os.dirInfo], *os.dirInfo) *os.dirInfo+0
+	rel 56+8 t=R_ADDR type:*sync/atomic.Pointer[os.dirInfo]+0
+	rel 64+8 t=R_ADDR type:*os.dirInfo+0
+	rel 72+8 t=R_ADDR type:*os.dirInfo+0
+type:.namedata.CompareAndSwap. SRODATA dupok size=16
+	0x0000 01 0e 43 6f 6d 70 61 72 65 41 6e 64 53 77 61 70  ..CompareAndSwap
+type:.namedata.*func(*os.dirInfo, *os.dirInfo) bool- SRODATA dupok size=38
+	0x0000 00 24 2a 66 75 6e 63 28 2a 6f 73 2e 64 69 72 49  .$*func(*os.dirI
+	0x0010 6e 66 6f 2c 20 2a 6f 73 2e 64 69 72 49 6e 66 6f  nfo, *os.dirInfo
+	0x0020 29 20 62 6f 6f 6c                                ) bool
+type:*func(*os.dirInfo, *os.dirInfo) bool SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 5e 6b 53 61 08 08 08 36 00 00 00 00 00 00 00 00  ^kSa...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*os.dirInfo, *os.dirInfo) bool-+0
+	rel 48+8 t=R_ADDR type:func(*os.dirInfo, *os.dirInfo) bool+0
+type:func(*os.dirInfo, *os.dirInfo) bool SRODATA dupok size=80
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 48 9c 04 10 02 08 08 33 00 00 00 00 00 00 00 00  H......3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 02 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*os.dirInfo, *os.dirInfo) bool-+0
+	rel 44+4 t=RelocType(-32763) type:*func(*os.dirInfo, *os.dirInfo) bool+0
+	rel 56+8 t=R_ADDR type:*os.dirInfo+0
+	rel 64+8 t=R_ADDR type:*os.dirInfo+0
+	rel 72+8 t=R_ADDR type:bool+0
+type:.namedata.Load. SRODATA dupok size=6
+	0x0000 01 04 4c 6f 61 64                                ..Load
+type:.namedata.*func() *os.dirInfo- SRODATA dupok size=21
+	0x0000 00 13 2a 66 75 6e 63 28 29 20 2a 6f 73 2e 64 69  ..*func() *os.di
+	0x0010 72 49 6e 66 6f                                   rInfo
+type:*func() *os.dirInfo SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 9f 33 b3 3d 08 08 08 36 00 00 00 00 00 00 00 00  .3.=...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func() *os.dirInfo-+0
+	rel 48+8 t=R_ADDR type:func() *os.dirInfo+0
+type:func() *os.dirInfo SRODATA dupok size=64
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 e2 f6 62 43 02 08 08 33 00 00 00 00 00 00 00 00  ..bC...3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func() *os.dirInfo-+0
+	rel 44+4 t=RelocType(-32763) type:*func() *os.dirInfo+0
+	rel 56+8 t=R_ADDR type:*os.dirInfo+0
+type:.namedata.Store. SRODATA dupok size=7
+	0x0000 01 05 53 74 6f 72 65                             ..Store
+type:.namedata.*func(*os.dirInfo)- SRODATA dupok size=20
+	0x0000 00 12 2a 66 75 6e 63 28 2a 6f 73 2e 64 69 72 49  ..*func(*os.dirI
+	0x0010 6e 66 6f 29                                      nfo)
+type:*func(*os.dirInfo) SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 bc 37 80 49 08 08 08 36 00 00 00 00 00 00 00 00  .7.I...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*os.dirInfo)-+0
+	rel 48+8 t=R_ADDR type:func(*os.dirInfo)+0
+type:func(*os.dirInfo) SRODATA dupok size=64
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 0f ea 90 93 02 08 08 33 00 00 00 00 00 00 00 00  .......3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*os.dirInfo)-+0
+	rel 44+4 t=RelocType(-32763) type:*func(*os.dirInfo)+0
+	rel 56+8 t=R_ADDR type:*os.dirInfo+0
+type:.namedata.Swap. SRODATA dupok size=6
+	0x0000 01 04 53 77 61 70                                ..Swap
+type:.namedata.*func(*os.dirInfo) *os.dirInfo- SRODATA dupok size=32
+	0x0000 00 1e 2a 66 75 6e 63 28 2a 6f 73 2e 64 69 72 49  ..*func(*os.dirI
+	0x0010 6e 66 6f 29 20 2a 6f 73 2e 64 69 72 49 6e 66 6f  nfo) *os.dirInfo
+type:*func(*os.dirInfo) *os.dirInfo SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 ab 76 75 e5 08 08 08 36 00 00 00 00 00 00 00 00  .vu....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*os.dirInfo) *os.dirInfo-+0
+	rel 48+8 t=R_ADDR type:func(*os.dirInfo) *os.dirInfo+0
+type:func(*os.dirInfo) *os.dirInfo SRODATA dupok size=72
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 63 31 bc d9 02 08 08 33 00 00 00 00 00 00 00 00  c1.....3........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 01 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 00 00 00 00 00 00 00 00                          ........
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*func(*os.dirInfo) *os.dirInfo-+0
+	rel 44+4 t=RelocType(-32763) type:*func(*os.dirInfo) *os.dirInfo+0
+	rel 56+8 t=R_ADDR type:*os.dirInfo+0
+	rel 64+8 t=R_ADDR type:*os.dirInfo+0
+type:*sync/atomic.Pointer[os.dirInfo] SRODATA dupok size=136
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 53 db c0 f4 09 08 08 36 00 00 00 00 00 00 00 00  S......6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 04 00 04 00  ................
+	0x0040 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0050 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0060 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0070 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0080 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*atomic.Pointer[os.dirInfo].+0
+	rel 48+8 t=R_ADDR type:sync/atomic.Pointer[os.dirInfo]+0
+	rel 56+4 t=R_ADDROFF type:.importpath.sync/atomic.+0
+	rel 72+4 t=R_ADDROFF type:.namedata.CompareAndSwap.+0
+	rel 76+4 t=R_METHODOFF type:func(*os.dirInfo, *os.dirInfo) bool+0
+	rel 80+4 t=R_METHODOFF sync/atomic.(*Pointer[os.dirInfo]).CompareAndSwap+0
+	rel 84+4 t=R_METHODOFF sync/atomic.(*Pointer[os.dirInfo]).CompareAndSwap+0
+	rel 88+4 t=R_ADDROFF type:.namedata.Load.+0
+	rel 92+4 t=R_METHODOFF type:func() *os.dirInfo+0
+	rel 96+4 t=R_METHODOFF sync/atomic.(*Pointer[os.dirInfo]).Load+0
+	rel 100+4 t=R_METHODOFF sync/atomic.(*Pointer[os.dirInfo]).Load+0
+	rel 104+4 t=R_ADDROFF type:.namedata.Store.+0
+	rel 108+4 t=R_METHODOFF type:func(*os.dirInfo)+0
+	rel 112+4 t=R_METHODOFF sync/atomic.(*Pointer[os.dirInfo]).Store+0
+	rel 116+4 t=R_METHODOFF sync/atomic.(*Pointer[os.dirInfo]).Store+0
+	rel 120+4 t=R_ADDROFF type:.namedata.Swap.+0
+	rel 124+4 t=R_METHODOFF type:func(*os.dirInfo) *os.dirInfo+0
+	rel 128+4 t=R_METHODOFF sync/atomic.(*Pointer[os.dirInfo]).Swap+0
+	rel 132+4 t=R_METHODOFF sync/atomic.(*Pointer[os.dirInfo]).Swap+0
+go:constinfo.main SDWARFCONST size=25
+	0x0000 0b 6d 61 69 6e 2e 69 74 65 72 61 74 69 6f 6e 73  .main.iterations
+	0x0010 00 00 00 00 00 80 ad e2 04                       .........
+	rel 17+4 t=R_DWARFSECREF go:info.int+0
+go:string."ASM Addition: %d iterations in %v (%.2f ns/op)\n" SRODATA dupok size=47
+	0x0000 41 53 4d 20 41 64 64 69 74 69 6f 6e 3a 20 25 64  ASM Addition: %d
+	0x0010 20 69 74 65 72 61 74 69 6f 6e 73 20 69 6e 20 25   iterations in %
+	0x0020 76 20 28 25 2e 32 66 20 6e 73 2f 6f 70 29 0a     v (%.2f ns/op).
+main..stmp_0 SRODATA static size=8
+	0x0000 80 96 98 00 00 00 00 00                          ........
+go:string."Go Addition: %d iterations in %v (%.2f ns/op)\n" SRODATA dupok size=46
+	0x0000 47 6f 20 41 64 64 69 74 69 6f 6e 3a 20 25 64 20  Go Addition: %d 
+	0x0010 69 74 65 72 61 74 69 6f 6e 73 20 69 6e 20 25 76  iterations in %v
+	0x0020 20 28 25 2e 32 66 20 6e 73 2f 6f 70 29 0a         (%.2f ns/op).
+main..stmp_1 SRODATA static size=8
+	0x0000 80 96 98 00 00 00 00 00                          ........
+go:string."ASM Multiplication: %d iterations in %v (%.2f ns/op)\n" SRODATA dupok size=53
+	0x0000 41 53 4d 20 4d 75 6c 74 69 70 6c 69 63 61 74 69  ASM Multiplicati
+	0x0010 6f 6e 3a 20 25 64 20 69 74 65 72 61 74 69 6f 6e  on: %d iteration
+	0x0020 73 20 69 6e 20 25 76 20 28 25 2e 32 66 20 6e 73  s in %v (%.2f ns
+	0x0030 2f 6f 70 29 0a                                   /op).
+main..stmp_2 SRODATA static size=8
+	0x0000 80 96 98 00 00 00 00 00                          ........
+go:string."Go Multiplication: %d iterations in %v (%.2f ns/op)\n" SRODATA dupok size=52
+	0x0000 47 6f 20 4d 75 6c 74 69 70 6c 69 63 61 74 69 6f  Go Multiplicatio
+	0x0010 6e 3a 20 25 64 20 69 74 65 72 61 74 69 6f 6e 73  n: %d iterations
+	0x0020 20 69 6e 20 25 76 20 28 25 2e 32 66 20 6e 73 2f   in %v (%.2f ns/
+	0x0030 6f 70 29 0a                                      op).
+main..stmp_3 SRODATA static size=8
+	0x0000 80 96 98 00 00 00 00 00                          ........
+go:string."\nPerformance Benchmarks:" SRODATA dupok size=24
+	0x0000 0a 50 65 72 66 6f 72 6d 61 6e 63 65 20 42 65 6e  .Performance Ben
+	0x0010 63 68 6d 61 72 6b 73 3a                          chmarks:
+go:string."======================" SRODATA dupok size=22
+	0x0000 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d  ================
+	0x0010 3d 3d 3d 3d 3d 3d                                ======
+main..stmp_4 SRODATA static size=16
+	0x0000 00 00 00 00 00 00 00 00 18 00 00 00 00 00 00 00  ................
+	rel 0+8 t=R_ADDR go:string."\nPerformance Benchmarks:"+0
+main..stmp_5 SRODATA static size=16
+	0x0000 00 00 00 00 00 00 00 00 16 00 00 00 00 00 00 00  ................
+	rel 0+8 t=R_ADDR go:string."======================"+0
+main.add_asm.args_stackmap SRODATA size=10
+	0x0000 02 00 00 00 03 00 00 00 00 00                    ..........
+main.add_asm.arginfo0 SRODATA size=5
+	0x0000 00 08 08 08 ff                                   .....
+main.multiply_asm.args_stackmap SRODATA size=10
+	0x0000 02 00 00 00 03 00 00 00 00 00                    ..........
+main.multiply_asm.arginfo0 SRODATA size=5
+	0x0000 00 08 08 08 ff                                   .....
+main.factorial_asm.args_stackmap SRODATA size=10
+	0x0000 02 00 00 00 02 00 00 00 00 00                    ..........
+main.factorial_asm.arginfo0 SRODATA size=3
+	0x0000 00 08 ff                                         ...
+main.strlen_asm.args_stackmap SRODATA size=10
+	0x0000 02 00 00 00 02 00 00 00 00 00                    ..........
+main.strlen_asm.arginfo0 SRODATA size=3
+	0x0000 00 08 ff                                         ...
+main.sum_array_asm.args_stackmap SRODATA size=10
+	0x0000 02 00 00 00 03 00 00 00 00 00                    ..........
+main.sum_array_asm.arginfo0 SRODATA size=5
+	0x0000 00 08 08 08 ff                                   .....
+go:string."ARM64 Assembly Module Demo on macOS" SRODATA dupok size=35
+	0x0000 41 52 4d 36 34 20 41 73 73 65 6d 62 6c 79 20 4d  ARM64 Assembly M
+	0x0010 6f 64 75 6c 65 20 44 65 6d 6f 20 6f 6e 20 6d 61  odule Demo on ma
+	0x0020 63 4f 53                                         cOS
+go:string."=====================================" SRODATA dupok size=37
+	0x0000 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d  ================
+	0x0010 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d 3d  ================
+	0x0020 3d 3d 3d 3d 3d                                   =====
+go:string."\nComparison with Go implementations:" SRODATA dupok size=36
+	0x0000 0a 43 6f 6d 70 61 72 69 73 6f 6e 20 77 69 74 68  .Comparison with
+	0x0010 20 47 6f 20 69 6d 70 6c 65 6d 65 6e 74 61 74 69   Go implementati
+	0x0020 6f 6e 73 3a                                      ons:
+go:string."\n✅ All assembly functions working correctly!" SRODATA dupok size=46
+	0x0000 0a e2 9c 85 20 41 6c 6c 20 61 73 73 65 6d 62 6c  .... All assembl
+	0x0010 79 20 66 75 6e 63 74 69 6f 6e 73 20 77 6f 72 6b  y functions work
+	0x0020 69 6e 67 20 63 6f 72 72 65 63 74 6c 79 21        ing correctly!
+go:string."Addition: %d + %d = %d\n" SRODATA dupok size=23
+	0x0000 41 64 64 69 74 69 6f 6e 3a 20 25 64 20 2b 20 25  Addition: %d + %
+	0x0010 64 20 3d 20 25 64 0a                             d = %d.
+go:string."Multiplication: %d * %d = %d\n" SRODATA dupok size=29
+	0x0000 4d 75 6c 74 69 70 6c 69 63 61 74 69 6f 6e 3a 20  Multiplication: 
+	0x0010 25 64 20 2a 20 25 64 20 3d 20 25 64 0a           %d * %d = %d.
+go:string."Factorial: %d! = %d\n" SRODATA dupok size=20
+	0x0000 46 61 63 74 6f 72 69 61 6c 3a 20 25 64 21 20 3d  Factorial: %d! =
+	0x0010 20 25 64 0a                                       %d.
+go:string."Hello, ARM64 Assembly!" SRODATA dupok size=22
+	0x0000 48 65 6c 6c 6f 2c 20 41 52 4d 36 34 20 41 73 73  Hello, ARM64 Ass
+	0x0010 65 6d 62 6c 79 21                                embly!
+go:string."String length of '%s': %d\n" SRODATA dupok size=26
+	0x0000 53 74 72 69 6e 67 20 6c 65 6e 67 74 68 20 6f 66  String length of
+	0x0010 20 27 25 73 27 3a 20 25 64 0a                     '%s': %d.
+go:string."Sum of array %v: %d\n" SRODATA dupok size=20
+	0x0000 53 75 6d 20 6f 66 20 61 72 72 61 79 20 25 76 3a  Sum of array %v:
+	0x0010 20 25 64 0a                                       %d.
+go:string."Go addition: %d + %d = %d (ASM: %d)\n" SRODATA dupok size=36
+	0x0000 47 6f 20 61 64 64 69 74 69 6f 6e 3a 20 25 64 20  Go addition: %d 
+	0x0010 2b 20 25 64 20 3d 20 25 64 20 28 41 53 4d 3a 20  + %d = %d (ASM: 
+	0x0020 25 64 29 0a                                      %d).
+go:string."Go multiplication: %d * %d = %d (ASM: %d)\n" SRODATA dupok size=42
+	0x0000 47 6f 20 6d 75 6c 74 69 70 6c 69 63 61 74 69 6f  Go multiplicatio
+	0x0010 6e 3a 20 25 64 20 2a 20 25 64 20 3d 20 25 64 20  n: %d * %d = %d 
+	0x0020 28 41 53 4d 3a 20 25 64 29 0a                    (ASM: %d).
+go:string."Go factorial: %d! = %d (ASM: %d)\n" SRODATA dupok size=33
+	0x0000 47 6f 20 66 61 63 74 6f 72 69 61 6c 3a 20 25 64  Go factorial: %d
+	0x0010 21 20 3d 20 25 64 20 28 41 53 4d 3a 20 25 64 29  ! = %d (ASM: %d)
+	0x0020 0a                                               .
+go:string."Go array sum: %d (ASM: %d)\n" SRODATA dupok size=27
+	0x0000 47 6f 20 61 72 72 61 79 20 73 75 6d 3a 20 25 64  Go array sum: %d
+	0x0010 20 28 41 53 4d 3a 20 25 64 29 0a                  (ASM: %d).
+main..stmp_6 SRODATA static size=16
+	0x0000 00 00 00 00 00 00 00 00 23 00 00 00 00 00 00 00  ........#.......
+	rel 0+8 t=R_ADDR go:string."ARM64 Assembly Module Demo on macOS"+0
+main..stmp_7 SRODATA static size=16
+	0x0000 00 00 00 00 00 00 00 00 25 00 00 00 00 00 00 00  ........%.......
+	rel 0+8 t=R_ADDR go:string."====================================="+0
+main..stmp_8 SRODATA static size=16
+	0x0000 00 00 00 00 00 00 00 00 24 00 00 00 00 00 00 00  ........$.......
+	rel 0+8 t=R_ADDR go:string."\nComparison with Go implementations:"+0
+main..stmp_9 SRODATA static size=16
+	0x0000 00 00 00 00 00 00 00 00 2e 00 00 00 00 00 00 00  ................
+	rel 0+8 t=R_ADDR go:string."\n✅ All assembly functions working correctly!"+0
+type:.namedata.*[10]int64- SRODATA dupok size=12
+	0x0000 00 0a 2a 5b 31 30 5d 69 6e 74 36 34              ..*[10]int64
+type:.eqfunc80 SRODATA dupok size=16
+	0x0000 00 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00  ........P.......
+	rel 0+8 t=R_ADDR runtime.memequal_varlen+0
+type:[10]int64 SRODATA dupok size=72
+	0x0000 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  P...............
+	0x0010 a1 ba 55 4e 0a 08 08 11 00 00 00 00 00 00 00 00  ..UN............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 0a 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR type:.eqfunc80+0
+	rel 32+8 t=R_ADDR runtime.gcbits.+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[10]int64-+0
+	rel 44+4 t=RelocType(-32763) type:*[10]int64+0
+	rel 48+8 t=R_ADDR type:int64+0
+	rel 56+8 t=R_ADDR type:[]int64+0
+type:*[10]int64 SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 e3 87 4d a4 08 08 08 36 00 00 00 00 00 00 00 00  ..M....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[10]int64-+0
+	rel 48+8 t=R_ADDR type:[10]int64+0
+runtime.nilinterequal·f SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR runtime.nilinterequal+0
+type:.namedata.*[1]interface {}- SRODATA dupok size=18
+	0x0000 00 10 2a 5b 31 5d 69 6e 74 65 72 66 61 63 65 20  ..*[1]interface 
+	0x0010 7b 7d                                            {}
+type:*[1]interface {} SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 73 3b a6 1c 08 08 08 36 00 00 00 00 00 00 00 00  s;.....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[1]interface {}-+0
+	rel 48+8 t=R_ADDR type:[1]interface {}+0
+runtime.gcbits.0200000000000000 SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+type:[1]interface {} SRODATA dupok size=72
+	0x0000 10 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+	0x0010 ea 37 5e 5e 02 08 08 11 00 00 00 00 00 00 00 00  .7^^............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 01 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.nilinterequal·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0200000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[1]interface {}-+0
+	rel 44+4 t=RelocType(-32763) type:*[1]interface {}+0
+	rel 48+8 t=R_ADDR type:interface {}+0
+	rel 56+8 t=R_ADDR type:[]interface {}+0
+type:.eqfunc.[2]interface {} SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR type:.eq.[2]interface {}+0
+type:.namedata.*[2]interface {}- SRODATA dupok size=18
+	0x0000 00 10 2a 5b 32 5d 69 6e 74 65 72 66 61 63 65 20  ..*[2]interface 
+	0x0010 7b 7d                                            {}
+type:*[2]interface {} SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 2a 46 a7 a3 08 08 08 36 00 00 00 00 00 00 00 00  *F.....6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]interface {}-+0
+	rel 48+8 t=R_ADDR type:[2]interface {}+0
+runtime.gcbits.0a00000000000000 SRODATA dupok size=8
+	0x0000 0a 00 00 00 00 00 00 00                          ........
+type:[2]interface {} SRODATA dupok size=72
+	0x0000 20 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00   ....... .......
+	0x0010 7a 04 98 81 02 08 08 11 00 00 00 00 00 00 00 00  z...............
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 02 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR type:.eqfunc.[2]interface {}+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0a00000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[2]interface {}-+0
+	rel 44+4 t=RelocType(-32763) type:*[2]interface {}+0
+	rel 48+8 t=R_ADDR type:interface {}+0
+	rel 56+8 t=R_ADDR type:[]interface {}+0
+type:.eqfunc.[3]interface {} SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR type:.eq.[3]interface {}+0
+type:.namedata.*[3]interface {}- SRODATA dupok size=18
+	0x0000 00 10 2a 5b 33 5d 69 6e 74 65 72 66 61 63 65 20  ..*[3]interface 
+	0x0010 7b 7d                                            {}
+type:*[3]interface {} SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 47 a7 a6 26 08 08 08 36 00 00 00 00 00 00 00 00  G..&...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[3]interface {}-+0
+	rel 48+8 t=R_ADDR type:[3]interface {}+0
+runtime.gcbits.2a00000000000000 SRODATA dupok size=8
+	0x0000 2a 00 00 00 00 00 00 00                          *.......
+type:[3]interface {} SRODATA dupok size=72
+	0x0000 30 00 00 00 00 00 00 00 30 00 00 00 00 00 00 00  0.......0.......
+	0x0010 f9 18 19 c9 02 08 08 11 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 03 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR type:.eqfunc.[3]interface {}+0
+	rel 32+8 t=R_ADDR runtime.gcbits.2a00000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[3]interface {}-+0
+	rel 44+4 t=RelocType(-32763) type:*[3]interface {}+0
+	rel 48+8 t=R_ADDR type:interface {}+0
+	rel 56+8 t=R_ADDR type:[]interface {}+0
+type:.eqfunc.[4]interface {} SRODATA dupok size=8
+	0x0000 00 00 00 00 00 00 00 00                          ........
+	rel 0+8 t=R_ADDR type:.eq.[4]interface {}+0
+type:.namedata.*[4]interface {}- SRODATA dupok size=18
+	0x0000 00 10 2a 5b 34 5d 69 6e 74 65 72 66 61 63 65 20  ..*[4]interface 
+	0x0010 7b 7d                                            {}
+type:*[4]interface {} SRODATA dupok size=56
+	0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+	0x0010 2a 4e 57 21 08 08 08 36 00 00 00 00 00 00 00 00  *NW!...6........
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR runtime.memequal64·f+0
+	rel 32+8 t=R_ADDR runtime.gcbits.0100000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[4]interface {}-+0
+	rel 48+8 t=R_ADDR type:[4]interface {}+0
+runtime.gcbits.aa00000000000000 SRODATA dupok size=8
+	0x0000 aa 00 00 00 00 00 00 00                          ........
+type:[4]interface {} SRODATA dupok size=72
+	0x0000 40 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00  @.......@.......
+	0x0010 7f c2 ec 98 02 08 08 11 00 00 00 00 00 00 00 00  ................
+	0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0040 04 00 00 00 00 00 00 00                          ........
+	rel 24+8 t=R_ADDR type:.eqfunc.[4]interface {}+0
+	rel 32+8 t=R_ADDR runtime.gcbits.aa00000000000000+0
+	rel 40+4 t=R_ADDROFF type:.namedata.*[4]interface {}-+0
+	rel 44+4 t=RelocType(-32763) type:*[4]interface {}+0
+	rel 48+8 t=R_ADDR type:interface {}+0
+	rel 56+8 t=R_ADDR type:[]interface {}+0
+gclocals·Soq6RzO4SX8YA1O9euewoQ== SRODATA dupok size=8
+	0x0000 03 00 00 00 00 00 00 00                          ........
+gclocals·ypkKCsjNF5sa+QaQBzdQzQ== SRODATA dupok size=11
+	0x0000 03 00 00 00 07 00 00 00 00 01 54                 ..........T
+main.BenchmarkAddASM.stkobj SRODATA static size=24
+	0x0000 01 00 00 00 00 00 00 00 d0 ff ff ff 30 00 00 00  ............0...
+	0x0010 30 00 00 00 00 00 00 00                          0.......
+	rel 20+4 t=R_ADDROFF runtime.gcbits.2a00000000000000+0
+gclocals·ISb46fRPFoZ9pIfykFK/kQ== SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+gclocals·Kuc7Ru8erybFG+YfMgZ+3g== SRODATA dupok size=10
+	0x0000 02 00 00 00 06 00 00 00 00 2a                    .........*
+main.BenchmarkAddGo.stkobj SRODATA static size=24
+	0x0000 01 00 00 00 00 00 00 00 d0 ff ff ff 30 00 00 00  ............0...
+	0x0010 30 00 00 00 00 00 00 00                          0.......
+	rel 20+4 t=R_ADDROFF runtime.gcbits.2a00000000000000+0
+main.BenchmarkMultiplyASM.stkobj SRODATA static size=24
+	0x0000 01 00 00 00 00 00 00 00 d0 ff ff ff 30 00 00 00  ............0...
+	0x0010 30 00 00 00 00 00 00 00                          0.......
+	rel 20+4 t=R_ADDROFF runtime.gcbits.2a00000000000000+0
+main.BenchmarkMultiplyGo.stkobj SRODATA static size=24
+	0x0000 01 00 00 00 00 00 00 00 d0 ff ff ff 30 00 00 00  ............0...
+	0x0010 30 00 00 00 00 00 00 00                          0.......
+	rel 20+4 t=R_ADDROFF runtime.gcbits.2a00000000000000+0
+gclocals·FzY36IO2mY0y4dZ1+Izd/w== SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
+gclocals·/AgNGF46ePWGN7m4rxCffw== SRODATA dupok size=9
+	0x0000 01 00 00 00 04 00 00 00 00                       .........
+main.runBenchmarks.stkobj SRODATA static size=40
+	0x0000 02 00 00 00 00 00 00 00 e0 ff ff ff 10 00 00 00  ................
+	0x0010 10 00 00 00 00 00 00 00 f0 ff ff ff 10 00 00 00  ................
+	0x0020 10 00 00 00 00 00 00 00                          ........
+	rel 20+4 t=R_ADDROFF runtime.gcbits.0200000000000000+0
+	rel 36+4 t=R_ADDROFF runtime.gcbits.0200000000000000+0
+gclocals·ltvLmerAjrWHAJDln24GsQ== SRODATA dupok size=8
+	0x0000 0d 00 00 00 00 00 00 00                          ........
+gclocals·fP61dzXZepefo8DUzX48+w== SRODATA dupok size=112
+	0x0000 0d 00 00 00 3d 00 00 00 00 00 00 00 00 00 00 00  ....=...........
+	0x0010 00 00 00 00 00 00 50 01 00 00 00 00 00 40 05 00  ......P......@..
+	0x0020 00 00 00 00 00 14 00 00 02 00 00 00 00 00 00 00  ................
+	0x0030 00 00 00 00 40 01 00 00 05 00 00 00 00 00 00 00  ....@...........
+	0x0040 04 00 00 00 14 00 00 00 04 00 00 00 00 00 00 00  ................
+	0x0050 04 00 00 55 00 00 00 00 04 00 55 00 00 00 00 00  ...U......U.....
+	0x0060 04 54 00 00 00 00 00 00 40 01 00 00 00 00 00 00  .T......@.......
+main.main.stkobj SRODATA static size=248
+	0x0000 0f 00 00 00 00 00 00 00 18 fe ff ff 08 00 00 00  ................
+	0x0010 08 00 00 00 00 00 00 00 20 fe ff ff 08 00 00 00  ........ .......
+	0x0020 08 00 00 00 00 00 00 00 30 fe ff ff 10 00 00 00  ........0.......
+	0x0030 10 00 00 00 00 00 00 00 40 fe ff ff 20 00 00 00  ........@... ...
+	0x0040 20 00 00 00 00 00 00 00 60 fe ff ff 30 00 00 00   .......`...0...
+	0x0050 30 00 00 00 00 00 00 00 90 fe ff ff 40 00 00 00  0...........@...
+	0x0060 40 00 00 00 00 00 00 00 d0 fe ff ff 40 00 00 00  @...........@...
+	0x0070 40 00 00 00 00 00 00 00 10 ff ff ff 10 00 00 00  @...............
+	0x0080 10 00 00 00 00 00 00 00 20 ff ff ff 20 00 00 00  ........ ... ...
+	0x0090 20 00 00 00 00 00 00 00 40 ff ff ff 20 00 00 00   .......@... ...
+	0x00a0 20 00 00 00 00 00 00 00 60 ff ff ff 20 00 00 00   .......`... ...
+	0x00b0 20 00 00 00 00 00 00 00 80 ff ff ff 30 00 00 00   ...........0...
+	0x00c0 30 00 00 00 00 00 00 00 b0 ff ff ff 30 00 00 00  0...........0...
+	0x00d0 30 00 00 00 00 00 00 00 e0 ff ff ff 10 00 00 00  0...............
+	0x00e0 10 00 00 00 00 00 00 00 f0 ff ff ff 10 00 00 00  ................
+	0x00f0 10 00 00 00 00 00 00 00                          ........
+	rel 20+4 t=R_ADDROFF runtime.gcbits.0100000000000000+0
+	rel 36+4 t=R_ADDROFF runtime.gcbits.0100000000000000+0
+	rel 52+4 t=R_ADDROFF runtime.gcbits.0200000000000000+0
+	rel 68+4 t=R_ADDROFF runtime.gcbits.0a00000000000000+0
+	rel 84+4 t=R_ADDROFF runtime.gcbits.2a00000000000000+0
+	rel 100+4 t=R_ADDROFF runtime.gcbits.aa00000000000000+0
+	rel 116+4 t=R_ADDROFF runtime.gcbits.aa00000000000000+0
+	rel 132+4 t=R_ADDROFF runtime.gcbits.0200000000000000+0
+	rel 148+4 t=R_ADDROFF runtime.gcbits.0a00000000000000+0
+	rel 164+4 t=R_ADDROFF runtime.gcbits.0a00000000000000+0
+	rel 180+4 t=R_ADDROFF runtime.gcbits.0a00000000000000+0
+	rel 196+4 t=R_ADDROFF runtime.gcbits.2a00000000000000+0
+	rel 212+4 t=R_ADDROFF runtime.gcbits.2a00000000000000+0
+	rel 228+4 t=R_ADDROFF runtime.gcbits.0200000000000000+0
+	rel 244+4 t=R_ADDROFF runtime.gcbits.0200000000000000+0
+main.factorial_go.arginfo1 SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...
+main.factorial_go.argliveinfo SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+main.add_asm.arginfo1 SRODATA static dupok size=5
+	0x0000 00 08 08 08 ff                                   .....
+main.add_asm.argliveinfo SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+main.multiply_asm.arginfo1 SRODATA static dupok size=5
+	0x0000 00 08 08 08 ff                                   .....
+main.multiply_asm.argliveinfo SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+main.factorial_asm.arginfo1 SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...
+main.factorial_asm.argliveinfo SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+main.strlen_asm.arginfo1 SRODATA static dupok size=3
+	0x0000 00 08 ff                                         ...
+main.strlen_asm.argliveinfo SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+main.sum_array_asm.arginfo1 SRODATA static dupok size=5
+	0x0000 00 08 08 08 ff                                   .....
+main.sum_array_asm.argliveinfo SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+gclocals·rJbr+btbFJy3NLIRCgNSZQ== SRODATA dupok size=10
+	0x0000 02 00 00 00 02 00 00 00 03 00                    ..........
+type:.eq.sync/atomic.Pointer[os.dirInfo].arginfo1 SRODATA static dupok size=3
+	0x0000 08 08 ff                                         ...
+type:.eq.sync/atomic.Pointer[os.dirInfo].argliveinfo SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+type:.eq.[2]interface {}.arginfo1 SRODATA static dupok size=3
+	0x0000 08 08 ff                                         ...
+type:.eq.[2]interface {}.argliveinfo SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+type:.eq.[3]interface {}.arginfo1 SRODATA static dupok size=3
+	0x0000 08 08 ff                                         ...
+type:.eq.[3]interface {}.argliveinfo SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+type:.eq.[4]interface {}.arginfo1 SRODATA static dupok size=3
+	0x0000 08 08 ff                                         ...
+type:.eq.[4]interface {}.argliveinfo SRODATA static dupok size=2
+	0x0000 00 00                                            ..
+$f64.416312d000000000 SRODATA size=8
+	0x0000 00 00 00 00 d0 12 63 41                          ......cA

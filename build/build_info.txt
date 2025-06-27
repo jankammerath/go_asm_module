@@ -1,0 +1,25 @@
+ARM64 Assembly Module Build Information
+======================================
+
+Build Date: Fri Jun 27 16:51:09 CEST 2025
+Platform: Darwin arm64
+Go Version: go version go1.24.2 darwin/arm64
+Git Commit: N/A
+Git Branch: N/A
+
+Build Configuration:
+- Debug Build: build/go_asm_module_debug
+- Release Build: build/go_asm_module
+- Assembly Output: build/assembly_output/
+
+Source Files:
+-rw-r--r--  1 jan  staff  1479 Jun 27 16:47 benchmark.go
+-rw-r--r--  1 jan  staff  2116 Jun 27 16:47 main.go
+-rw-r--r--  1 jan  staff  2654 Jun 27 16:47 math_arm64.s
+
+Binary Information:
+Release Binary Size: 1.5M
+Release Binary MD5: 18a8c446b2a83d7ccb63426817f54400
+
+Debug Binary Size: 2.3M
+Debug Binary MD5: a5921319ce754a22b39e12e616ef8e32

@@ -1,0 +1,23 @@
+ARM64 Assembly Module Demo on macOS
+=====================================
+Addition: 15 + 27 = 42
+Multiplication: 8 * 9 = 72
+Factorial: 6! = 720
+String length of 'Hello, ARM64 Assembly!': 22
+Sum of array [1 2 3 4 5 6 7 8 9 10]: 55
+
+Comparison with Go implementations:
+Go addition: 15 + 27 = 42 (ASM: 42)
+Go multiplication: 8 * 9 = 72 (ASM: 72)
+Go factorial: 6! = 720 (ASM: 720)
+Go array sum: 55 (ASM: 55)
+
+Performance Benchmarks:
+======================
+Go Addition: 10000000 iterations in 3.242916ms (0.32 ns/op)
+ASM Addition: 10000000 iterations in 15.221042ms (1.52 ns/op)
+
+Go Multiplication: 10000000 iterations in 3.604208ms (0.36 ns/op)
+ASM Multiplication: 10000000 iterations in 18.784375ms (1.88 ns/op)
+
+✅ All assembly functions working correctly!
